@@ -1,0 +1,25 @@
+  .blob-2 {
+      width: 5.556vh;
+      /* Adjust the width to make it smaller */
+      aspect-ratio: 1;
+      border: 0.694vh solid #0000;
+      /* Adjust border size accordingly */
+      background:
+          radial-gradient(farthest-side, #fff 98%, #0000) 0 0/1.389vh 1.389vh,
+          /* Adjust the size of the radial gradients */
+          radial-gradient(farthest-side, #fff 98%, #0000) 100% 0/1.389vh 1.389vh,
+          radial-gradient(farthest-side, #fff 98%, #0000) 100% 100%/1.389vh 1.389vh,
+          radial-gradient(farthest-side, #fff 98%, #0000) 0 100%/1.389vh 1.389vh,
+          linear-gradient(#000 0 0) center/4.167vh 4.167vh;
+      /* Adjust the size of the linear gradient */
+      background-repeat: no-repeat;
+      filter: blur(0vh) contrast(5);
+      /* Adjust the filter values */
+      animation: b2 0.8s infinite;
+  }
+
+  @keyframes b2 {
+      100% {
+          background-position: 100% 0, 100% 100%, 0 100%, 0 0, center
+      }
+  }
