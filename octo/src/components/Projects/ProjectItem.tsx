@@ -19,9 +19,9 @@ const ProjectItem: React.FC<ProjectItemProps> = (props) => {
             borderRadius={'10px'}
             m={2}
             // boxShadow={'2xl'}
-            _hover={{
-                boxShadow: 'dark-lg'
-            }}
+            // _hover={{
+            //     boxShadow: 'dark-lg'
+            // }}
             p={2}
             justify={'center'}
             align={'center'}

@@ -13,6 +13,7 @@ const Projects: React.FC<ProjectsProps> = () => {
         <>
             <Flex
                 width={'90%'}
+                zIndex={3}
                 border={'1px solid black'}
                 borderRadius={10}
                 background={'white'}

@@ -10,6 +10,7 @@ const Abouts: React.FC<AboutsProps> = () => {
     return (
         <>
             <Flex
+                zIndex={3}
                 width={'90%'}
                 border={'1px solid black'}
                 borderRadius={10}
