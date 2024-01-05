@@ -1,3 +1,5 @@
+import Abouts from '@/components/About/Abouts'
+import { Flex } from '@chakra-ui/react'
 import Head from 'next/head'
 
 export default function Home() {
@@ -7,7 +9,13 @@ export default function Home() {
         <title>himanshu.gg</title>
         <link rel="icon" href="/logo192.png" />
       </Head>
-      hi
+      <Flex
+        justify={'center'}
+        m={9}
+      >
+        <Abouts />
+      </Flex>
+
     </>
   )
 }

@@ -23,3 +23,39 @@
           background-position: 100% 0, 100% 100%, 0 100%, 0 0, center
       }
   }
+
+  @font-face {
+      font-family: "CabinSketch";
+      src: url('../../fonts/CabinSketch-Regular.ttf');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: "CabinSketch";
+      src: url('../../fonts/CabinSketch-Bold.ttf');
+      font-weight: bold;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: "LondrinaSketch";
+      src: url('../../fonts/LondrinaSketch-Regular.ttf');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  .londrinasketch {
+      font-family: 'LondrinaSketch';
+      font-weight: normal;
+  }
+
+  .cabinsketch {
+      font-family: 'CabinSketch';
+      font-weight: bold;
+  }
+
+  .cabinsketchB {
+      font-family: 'CabinSketch';
+      font-weight: normal;
+  }

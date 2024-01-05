@@ -7,7 +7,7 @@ import { RecoilEnv, RecoilRoot } from 'recoil';
 import { theme } from '../chakra/theme';
 import Layout from '../components/Layout/Layout';
 import '../styles/globals.css';
-import '../styles/navbar.css'
+import '../styles/scss/snow.scss'
 RecoilEnv.RECOIL_DUPLICATE_ATOM_KEY_CHECKING_ENABLED = false;
 const Loader = () => (
   <Flex
