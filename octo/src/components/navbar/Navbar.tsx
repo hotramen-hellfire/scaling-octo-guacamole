@@ -85,8 +85,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                         >
                             <Text
                                 fontFamily={'CabinSketch'}
-                                fontSize={30}                            // justify={'center'}
-
+                                fontSize={30}
                                 fontWeight={'Bold'}
                                 align="center"
                             >

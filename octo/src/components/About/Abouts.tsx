@@ -12,7 +12,7 @@ const Abouts: React.FC<AboutsProps> = () => {
             <Flex
                 zIndex={3}
                 width={'90%'}
-                border={'1px solid black'}
+                // border={'1px solid black'}
                 borderRadius={10}
                 background={'white'}
                 // justify={'center'}
