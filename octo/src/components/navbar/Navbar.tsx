@@ -3,7 +3,7 @@ import React from 'react';
 import { BsBodyText } from "react-icons/bs";
 import { GiSpellBook } from "react-icons/gi";
 import { FaCat } from "react-icons/fa";
-import { dataName, dataGithubLink } from '../../../data';
+import { dataNavbarName, dataName, dataGithubLink } from '../../../data';
 type NavbarProps = {
 
 };
@@ -51,7 +51,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                             color: 'orange.500',
                         }}
                     >
-                        {dataName}
+                        {dataNavbarName}
                     </Text>
                 </Flex>
                 <Flex

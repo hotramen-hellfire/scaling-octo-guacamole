@@ -1,6 +1,6 @@
 import { Flex, Text } from '@chakra-ui/react';
 import React from 'react';
-import { dataAboutText, dataName } from '../../../data';
+import { dataAboutText, dataName, dataCityFrom } from '../../../data';
 type AboutsProps = {
 
 };
@@ -15,11 +15,11 @@ const Abouts: React.FC<AboutsProps> = () => {
                 borderRadius={10}
                 background={'white'}
                 // justify={'center'}
-                boxShadow={'2xl'}
                 align={'center'}
                 flexDirection={'column'}
                 display={dataAboutText ? 'flex' : 'none'}
                 pb={2}
+                boxShadow={'2xl'}
                 _hover={{
                     boxShadow: 'dark-lg'
                 }}
@@ -47,7 +47,7 @@ const Abouts: React.FC<AboutsProps> = () => {
                     fontFamily={'PencilSRB'}
                     textAlign={'right'}
                 >
-                    {dataName}
+                    {dataName}<br />{dataCityFrom.toUpperCase()}
                 </Text>
             </Flex>
         </>

@@ -122,13 +122,6 @@ a {
 }
 
 @font-face {
-  font-family: "Saucer";
-  src: url('../../fonts/SaucerBB.ttf');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Unseen";
   src: url('../../fonts/the unseen.ttf');
   font-weight: normal;
