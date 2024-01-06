@@ -1,10 +1,12 @@
-import { Flex, Icon, Link, Text } from '@chakra-ui/react';
+import { Flex, Icon, Link, Image, Text } from '@chakra-ui/react';
 import React from 'react';
 import { BsBodyText } from "react-icons/bs";
 import { FaCat } from "react-icons/fa";
 import { GiSpellBook } from "react-icons/gi";
+import { GiStarCycle } from "react-icons/gi";
 import { dataGithubLink, dataNavbarName } from '../../../data';
 import { useRouter } from 'next/router';
+import { GiSolarSystem } from "react-icons/gi";
 type NavbarProps = {
 
 };
@@ -34,6 +36,10 @@ const Navbar: React.FC<NavbarProps> = () => {
                     justify={'space-between'}
                     align={'center'}
                 >
+                    <Image
+                        src='/leaf.png'
+                        width={7}
+                    />
                     <Text
                         fontFamily={'CabinSketch'}
                         fontSize={40}

@@ -43,13 +43,13 @@ const Music: React.FC<MusicProps> = () => {
                 >
                     <Typewriter
                         options={{
-                            delay: 250,
+                            delay: 100,
                         }}
                         onInit={(typewriter) => {
                             typewriter.typeString('FAVOURITE')
-                                .pauseFor(500)
+                                .pauseFor(200)
                             typewriter.typeString(' ')
-                                .pauseFor(1000)
+                                .pauseFor(400)
                             typewriter.typeString('MUSIC')
                                 .callFunction(() => {
                                     setMusicDone(true);

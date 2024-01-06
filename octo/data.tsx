@@ -1,6 +1,6 @@
 import { music, project } from "./interfaces"
-export const dataDesktopBGLink: string = 'https://wallpaperaccess.com/full/2641047.gif';
-export const dataMobileBGLink: string = 'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXJpODg0NnMwcTdsa2NtbDh4OXp1NXZwOWFnNGQ1eHJnYmY5djN1bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ddfb7PvwyzrepUhsdZ/giphy.gif';
+export const dataDesktopBGLink: string = 'https://github.com/hotramen-hellfire/scaling-octo-guacamole/blob/main/imagebanks/yellomoonbg.jpg?raw=true';
+export const dataMobileBGLink: string = 'https://github.com/hotramen-hellfire/scaling-octo-guacamole/blob/main/imagebanks/yellomoonbg.jpg?raw=true';
 export const dataNavbarName: string = 'HIMANSHU'
 export const dataName: string = 'HIMANSHU'
 export const dataGithubLink: string = 'https://github.com/hotramen-hellfire'
