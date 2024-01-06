@@ -1,8 +1,7 @@
-import { Flex, Text, Accordion, Stack } from '@chakra-ui/react';
+import { Flex, Text } from '@chakra-ui/react';
 import React, { useState } from 'react';
-import { dataAboutText, dataFavouriteMusic } from '../../../data';
-import MusicItem from '../Music/MusicItem';
 import Typewriter from 'typewriter-effect';
+import { dataAboutText } from '../../../data';
 
 type ScrapbookWrapperProps = {
 

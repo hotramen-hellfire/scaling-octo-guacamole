@@ -29,7 +29,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                     boxShadow: 'dark-lg'
                 }}
                 flexDirection={'row'}
-                borderRadius={10}
+                borderRadius={2}
             >
                 <Flex
                     justify={'space-between'}
