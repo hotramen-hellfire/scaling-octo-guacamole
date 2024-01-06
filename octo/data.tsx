@@ -49,12 +49,12 @@ export const dataScholastics: string[] = [
     'Went to Blue Heaven Vidyalaya, SFS, Mansarovar, Jaipur.',
     'Currently pursuing Bachelors of Techonology in Computer Science and Engineering from Indian Institute of Technology, Bombay, graduating 2026.'
 ]
-
 export const dataFavouriteMusic: music[] = [
     {
         title: 'Keep It',
         artist: 'Kid Culture',
         yturl: 'https://youtu.be/nE1R28U4Mmc?si=t0z86-F-Er1TXb0-',
+        comment: ''
     },
     {
         title: 'Aaj Na',
@@ -95,11 +95,6 @@ export const dataFavouriteMusic: music[] = [
         title: 'Homicide',
         artist: 'Logic',
         yturl: 'https://youtu.be/mfqsEpjEtrw?si=DtCxtL6hEhg5YuM7'
-    },
-    {
-        title: 'Ransom',
-        artist: 'Lil Tecca',
-        yturl: 'https://youtu.be/Sz-zo83cogY?si=YhTI5YpnZvDWWhj9'
     },
     {
         title: 'Rebel Without A Pause',

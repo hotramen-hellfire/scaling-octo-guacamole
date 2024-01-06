@@ -1,18 +1,17 @@
-import { Flex, Icon, Link, Image, Text } from '@chakra-ui/react';
+import { Flex, Icon, Image, Link, Text } from '@chakra-ui/react';
+import { useRouter } from 'next/router';
 import React from 'react';
-import { BsBodyText } from "react-icons/bs";
 import { FaCat } from "react-icons/fa";
 import { GiSpellBook } from "react-icons/gi";
-import { GiStarCycle } from "react-icons/gi";
+import { SiHomebrew } from "react-icons/si";
 import { dataGithubLink, dataNavbarName } from '../../../data';
-import { useRouter } from 'next/router';
-import { GiSolarSystem } from "react-icons/gi";
 type NavbarProps = {
 
 };
 
 const Navbar: React.FC<NavbarProps> = () => {
     const router = useRouter();
+    const { asPath } = useRouter();
     return (
         <>
             <Flex
@@ -36,10 +35,15 @@ const Navbar: React.FC<NavbarProps> = () => {
                     justify={'space-between'}
                     align={'center'}
                 >
-                    <Image
-                        src='/leaf.png'
-                        width={7}
-                    />
+                    <Link
+                        href='https://github.com/hotramen-hellfire/scaling-octo-guacamole'
+                        target='_blank'
+                    >
+                        <Image
+                            src='/leaf.png'
+                            width={7}
+                        />
+                    </Link>
                     <Text
                         fontFamily={'CabinSketch'}
                         fontSize={40}
@@ -51,6 +55,9 @@ const Navbar: React.FC<NavbarProps> = () => {
                         _hover={{
                             fontFamily: 'PWPers',
                             textDecoration: 'underline'
+                        }}
+                        onClick={() => {
+                            router.push('/')
                         }}
                     >
                         {dataNavbarName}
@@ -65,6 +72,9 @@ const Navbar: React.FC<NavbarProps> = () => {
                     pb={2}
                     borderRadius={5}
                     cursor={'pointer'}
+                    onClick={() => {
+                        router.push('/')
+                    }}
                 >
                     <Flex
                         height={'100%'}
@@ -80,7 +90,8 @@ const Navbar: React.FC<NavbarProps> = () => {
                             justify={'center'}
                         >
                             <Text
-                                fontFamily={'CabinSketch'}
+                                display={{ base: 'none', md: 'flex' }}
+                                fontFamily={asPath === '/' ? 'PWPers' : 'CabinSketch'}
                                 fontSize={30}
                                 fontWeight={'Bold'}
                                 align="center"
@@ -88,14 +99,11 @@ const Navbar: React.FC<NavbarProps> = () => {
                                     fontFamily: 'PWPers',
                                     textDecoration: 'underline'
                                 }}
-                                onClick={() => {
-                                    router.push('/')
-                                }}
                             >
                                 HOME
                             </Text>
                         </Flex>
-                        <Icon fontSize={24} ml={1} mr={{ base: 1, md: 1 }} as={BsBodyText} />
+                        <Icon fontSize={24} ml={1} mr={{ base: 1, md: 1 }} display={asPath === '/' ? 'none' : 'flex'} as={SiHomebrew} />
                     </Flex>
                 </Flex>
                 <Flex
@@ -106,6 +114,9 @@ const Navbar: React.FC<NavbarProps> = () => {
                     pt={2}
                     pb={2}
                     borderRadius={5}
+                    onClick={() => {
+                        router.push('/scrapbook')
+                    }}
                     cursor={'pointer'}
                 >
                     <Flex
@@ -121,7 +132,8 @@ const Navbar: React.FC<NavbarProps> = () => {
                             justify={'center'}
                         >
                             <Text
-                                fontFamily={'CabinSketch'}
+                                fontFamily={asPath === '/scrapbook' ? 'PWPers' : 'CabinSketch'}
+                                display={{ base: 'none', md: 'flex' }}
                                 fontSize={30}
                                 _hover={{
                                     fontFamily: 'PWPers',
@@ -129,14 +141,11 @@ const Navbar: React.FC<NavbarProps> = () => {
                                 }}
                                 fontWeight={'Bold'}
                                 align="center"
-                                onClick={() => {
-                                    router.push('/scrapbook')
-                                }}
                             >
                                 SCRAPBOOK
                             </Text>
                         </Flex>
-                        <Icon fontSize={26} ml={1} mr={{ base: 1, md: 1 }} as={GiSpellBook} />
+                        <Icon fontSize={26} ml={1} mr={{ base: 1, md: 1 }} display={asPath === '/scrapbook' ? 'none' : 'flex'} as={GiSpellBook} />
                     </Flex>
                 </Flex>
                 <Flex
@@ -169,6 +178,7 @@ const Navbar: React.FC<NavbarProps> = () => {
 
                                 <Text
                                     fontFamily={'CabinSketch'}
+                                    display={{ base: 'none', md: 'flex' }}
                                     fontSize={30}                            // justify={'center'}
                                     fontWeight={'Bold'}
                                     align="center"
