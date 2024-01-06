@@ -5,6 +5,7 @@ import School from '@/components/School/School'
 import { Stack } from '@chakra-ui/react'
 import { useEffect, useState } from 'react'
 import { dataName } from '../../data'
+import Contacts from '@/components/Contacts/Contacts'
 export default function Home() {
   const [quoteLoading1, setQuoteLoading1] = useState(false);
   const [quoteLoading2, setQuoteLoading2] = useState(false);
@@ -87,12 +88,13 @@ export default function Home() {
         m={9}
         flexDirection={'column'}
       >
+        <Abouts />
         <Quote text={q1.text} author={q1.author} loading={quoteLoading1} />
         <Projects />
         <Quote text={q2.text} author={q2.author} loading={quoteLoading2} />
         <School />
         <Quote text={q3.text} author={q3.author} loading={quoteLoading3} />
-        <Abouts />
+        <Contacts />
       </Stack>
     </>
   )

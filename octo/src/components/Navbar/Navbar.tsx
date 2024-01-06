@@ -151,52 +151,6 @@ const Navbar: React.FC<NavbarProps> = () => {
                     </Flex>
                 </Flex>
                 <Flex
-                    display={dataGithubLink ? 'flex' : 'none'}
-                    align="center"
-                    justify="center"
-                    pl={2}
-                    pr={2}
-                    pt={2}
-                    pb={2}
-                    borderRadius={5}
-                    cursor={'pointer'}
-                >
-                    <Link
-                        href='https://github.com/hotramen-hellfire'
-                        target='blank'
-                    >
-                        <Flex
-                            height={'100%'}
-                            width={'100%'}
-                            align="center"
-                            justify={'center'}
-                        >
-                            <Flex
-                                height={'100%'}
-                                width={'100%'}
-                                align="center"
-                                justify={'center'}
-                            >
-
-                                <Text
-                                    fontFamily={'CabinSketch'}
-                                    display={{ base: 'none', md: 'flex' }}
-                                    fontSize={30}                            // justify={'center'}
-                                    fontWeight={'Bold'}
-                                    align="center"
-                                    _hover={{
-                                        fontFamily: 'PWPers',
-                                        textDecoration: 'underline'
-                                    }}
-                                >
-                                    CAT
-                                </Text>
-                            </Flex>
-                            <Icon fontSize={26} ml={1} mr={{ base: 1, md: 1 }} as={FaCat} />
-                        </Flex>
-                    </Link>
-                </Flex>
-                <Flex
                     align="center"
                     justify="center"
                     pl={2}
@@ -235,7 +189,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                                 CONTACT
                             </Text>
                         </Flex>
-                        <Icon fontSize={22} ml={1} mr={{ base: 1, md: 1 }} display={asPath === '/scrapbook' ? 'none' : 'flex'} as={RiContactsLine} />
+                        <Icon fontSize={22} ml={1} mr={{ base: 1, md: 1 }} as={RiContactsLine} />
                     </Flex>
                 </Flex>
             </Flex>
