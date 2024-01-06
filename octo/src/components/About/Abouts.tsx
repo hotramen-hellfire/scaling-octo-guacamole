@@ -1,12 +1,13 @@
 import { Flex, Text } from '@chakra-ui/react';
-import React from 'react';
+import React, { useState } from 'react';
 import { dataAboutText, dataName, dataCityFrom } from '../../../data';
+import Typewriter from 'typewriter-effect';
 type AboutsProps = {
 
 };
 
 const Abouts: React.FC<AboutsProps> = () => {
-
+    const [abtDone, setAbtDone] = useState(false);
     return (
         <>
             <Flex
@@ -30,9 +31,32 @@ const Abouts: React.FC<AboutsProps> = () => {
                     fontSize={50}
                     textAlign={'center'}
                     width={'100%'}
+                    display={abtDone ? 'unset' : 'none'}
                 >
                     ABOUT ME
                 </Text>
+                <Flex
+                    fontFamily={'PWPers'}
+                    fontSize={50}
+                    display={!abtDone ? 'flex' : 'none'}
+                >
+                    <Typewriter
+                        options={{
+                            delay: 250,
+                        }}
+                        onInit={(typewriter) => {
+                            typewriter.typeString('ABOUT')
+                                .pauseFor(500)
+                            typewriter.typeString(' ')
+                                .pauseFor(1000)
+                            typewriter.typeString('ME')
+                                .callFunction(() => {
+                                    setAbtDone(true);
+                                })
+                                .start();
+                        }}
+                    />
+                </Flex>
                 <Text
                     width={'80 %'}
                     textAlign={'center'}
@@ -50,7 +74,7 @@ const Abouts: React.FC<AboutsProps> = () => {
                 >
                     {dataName}<br />{dataCityFrom.toUpperCase()}
                 </Text>
-            </Flex>
+            </Flex >
         </>
     )
 }
