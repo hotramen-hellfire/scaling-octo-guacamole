@@ -5,6 +5,7 @@ import Snow from './Snow';
 import { fontColorState } from '../Atoms/fontColorAtom';
 import { useRecoilState } from 'recoil';
 import { dataDesktopBGLink, dataMobileBGLink } from '../../../data';
+import Footer from '../Footer/Footer';
 type LayoutProps = {
     children: any;
 };
@@ -33,6 +34,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <main>
                     {children}
                 </main>
+                <Footer />
             </Flex>
         </>
     );

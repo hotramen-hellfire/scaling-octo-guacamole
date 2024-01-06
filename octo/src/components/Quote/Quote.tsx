@@ -23,7 +23,7 @@ const Quote: React.FC<QuoteProps> = ({ text, author }) => {
                 borderRadius={10}
                 backdropBlur={'10px'}
                 backdropFilter={'blur(20px) contrast(90%)'}
-                border={'1px solid white'}
+                border={'2px dotted white'}
             >
                 <Text
                     fontFamily={'Unseen'}

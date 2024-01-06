@@ -14,7 +14,6 @@ const Navbar: React.FC<NavbarProps> = () => {
             <Flex
                 zIndex={2}
                 backdropFilter={'blur(40px)'}
-                // border="1px solid black"
                 height="50px"
                 overflow={"visible"}
                 justify={'space-between'}
@@ -43,8 +42,8 @@ const Navbar: React.FC<NavbarProps> = () => {
                         mr={1}
                         zIndex={1}
                         _hover={{
-                            border: '1px solid white',
-                            color: 'orange.500',
+                            fontFamily: 'PWPers',
+                            textDecoration: 'underline'
                         }}
                     >
                         {dataNavbarName}
@@ -57,13 +56,8 @@ const Navbar: React.FC<NavbarProps> = () => {
                     pr={2}
                     pt={2}
                     pb={2}
-                    _hover={{
-                        border: '1px solid white',
-                        color: 'blue',
-                    }}
                     borderRadius={5}
                     cursor={'pointer'}
-                    height={'38px'}
                 >
                     <Flex
                         height={'100%'}
@@ -83,8 +77,12 @@ const Navbar: React.FC<NavbarProps> = () => {
                                 fontSize={30}
                                 fontWeight={'Bold'}
                                 align="center"
+                                _hover={{
+                                    fontFamily: 'PWPers',
+                                    textDecoration: 'underline'
+                                }}
                             >
-                                about
+                                ABOUT
                             </Text>
                         </Flex>
                         <Icon fontSize={24} ml={1} mr={{ base: 1, md: 1 }} as={BsBodyText} />
@@ -97,13 +95,8 @@ const Navbar: React.FC<NavbarProps> = () => {
                     pr={2}
                     pt={2}
                     pb={2}
-                    _hover={{
-                        border: '1px solid white',
-                        color: 'pink.500',
-                    }}
                     borderRadius={5}
                     cursor={'pointer'}
-                    height={'38px'}
                 >
                     <Flex
                         height={'100%'}
@@ -119,12 +112,15 @@ const Navbar: React.FC<NavbarProps> = () => {
                         >
                             <Text
                                 fontFamily={'CabinSketch'}
-                                fontSize={30}                            // justify={'center'}
-
+                                fontSize={30}
+                                _hover={{
+                                    fontFamily: 'PWPers',
+                                    textDecoration: 'underline'
+                                }}
                                 fontWeight={'Bold'}
                                 align="center"
                             >
-                                scrapbook
+                                SCRAPBOOK
                             </Text>
                         </Flex>
                         <Icon fontSize={26} ml={1} mr={{ base: 1, md: 1 }} as={GiSpellBook} />
@@ -138,13 +134,8 @@ const Navbar: React.FC<NavbarProps> = () => {
                     pr={2}
                     pt={2}
                     pb={2}
-                    _hover={{
-                        border: '1px solid white',
-                        color: 'green.500',
-                    }}
                     borderRadius={5}
                     cursor={'pointer'}
-                    height={'38px'}
                 >
                     <Link
                         href='https://github.com/hotramen-hellfire'
@@ -168,8 +159,12 @@ const Navbar: React.FC<NavbarProps> = () => {
                                     fontSize={30}                            // justify={'center'}
                                     fontWeight={'Bold'}
                                     align="center"
+                                    _hover={{
+                                        fontFamily: 'PWPers',
+                                        textDecoration: 'underline'
+                                    }}
                                 >
-                                    cat
+                                    CAT
                                 </Text>
                             </Flex>
                             <Icon fontSize={26} ml={1} mr={{ base: 1, md: 1 }} as={FaCat} />
