@@ -14,7 +14,7 @@ const Abouts: React.FC<AboutsProps> = () => {
                 zIndex={3}
                 width={'90%'}
                 borderRadius={10}
-                background={'white'}
+                backdropFilter={'blur(40px)'}
                 align={'center'}
                 flexDirection={'column'}
                 display={dataAboutText ? 'flex' : 'none'}

@@ -17,7 +17,7 @@ const Projects: React.FC<ProjectsProps> = () => {
                 zIndex={3}
                 // border={'1px solid black'}
                 borderRadius={10}
-                background={'white'}
+                backdropFilter={'blur(40px)'}
                 // justify={'center'}
                 align={'center'}
                 flexDirection={'column'}
@@ -64,11 +64,11 @@ const Projects: React.FC<ProjectsProps> = () => {
                             }}
                         />
                     </Flex>
-                    <Image
+                    {/* <Image
                         mt={-5}
                         width={100}
                         src='https://media4.giphy.com/media/wKFY1XaNEainm/giphy.gif?cid=ecf05e47bxwpl5g9xoj9umq4byxk1esat0uxazmos27udr2j&ep=v1_gifs_search&rid=giphy.gif&ct=g'
-                    />
+                    /> */}
                 </Flex>
                 <Flex
                     flexDirection={'column'}

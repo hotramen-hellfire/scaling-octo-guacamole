@@ -18,7 +18,9 @@ const Navbar: React.FC<NavbarProps> = () => {
                 // border="1px solid black"
                 height="50px"
                 overflow={"visible"}
-                justify={'space-evenly'}
+                justify={'space-between'}
+                pl={10}
+                pr={10}
                 align={'center'}
                 boxShadow={'2xl'}
                 overflowY={'hidden'}
@@ -31,13 +33,13 @@ const Navbar: React.FC<NavbarProps> = () => {
             >
                 <Flex
                     justify={'space-between'}
-                    width={'100px'}
+                    // width={'100px'}
                     align={'center'}
                 >
-                    <Image
+                    {/* <Image
                         src='https://i.giphy.com/1k889fiqiZV19HO2sx.webp'
                         height={'45px'}
-                    />
+                    /> */}
                     <Text
                         fontFamily={'CabinSketch'}
                         fontSize={40}

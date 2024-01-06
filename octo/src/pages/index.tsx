@@ -5,12 +5,17 @@ import { Stack } from '@chakra-ui/react'
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import { dataName } from '../../data';
+import Quote from '@/components/Quote/Quote'
 export default function Home() {
   const [q1, setq1] = useState({
     text: "",
     author: ""
   })
   const [q2, setq2] = useState({
+    text: "",
+    author: ""
+  })
+  const [q3, setq3] = useState({
     text: "",
     author: ""
   })
@@ -25,7 +30,7 @@ export default function Home() {
         })
       } else {
         setq1({
-          text: "An error occured while fetching the quote. . .",
+          text: "",
           author: dataName
         })
       }
@@ -40,13 +45,30 @@ export default function Home() {
         })
       } else {
         setq2({
-          text: "Another error occured while fetching the quote. . .",
+          text: "",
           author: dataName
         })
       }
     }
-    updateQuote1();
-    updateQuote2();
+    async function updateQuote3() {
+      const response = await fetch("https://api.quotable.io/random?tags=humorous");
+      const data = await response.json();
+      if (response.ok) {
+        setq3({
+          text: data.content,
+          author: data.author
+        })
+      } else {
+        setq3({
+          text: "",
+          author: dataName
+        })
+      }
+    }
+    if (!q1.text) updateQuote1();
+    if (!q2.text) updateQuote2();
+    if (!q3.text) updateQuote3();
+
   })
 
   return (
@@ -61,8 +83,11 @@ export default function Home() {
         m={9}
         flexDirection={'column'}
       >
+        <Quote text={q1.text} author={q1.author} />
         <Projects />
+        <Quote text={q2.text} author={q2.author} />
         <School />
+        <Quote text={q3.text} author={q3.author} />
         <Abouts />
       </Stack>
     </>

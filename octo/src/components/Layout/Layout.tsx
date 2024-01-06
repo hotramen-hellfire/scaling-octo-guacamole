@@ -13,7 +13,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 width={'100vw'}
                 minHeight={'100vh'}
                 flexDirection={'column'}
-                background={'white'}
+                // background={'white'}
+                backgroundImage={'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWdraXJ5dGp2YmJtZ2l5MXZxdzJwZ3NiNDgxemQ5MHdydjZ1Yng4eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rcFs59ww1R7yeFszmo/giphy.gif'}
                 backgroundAttachment={'fixed'}
                 backgroundSize={'cover'}
                 backgroundRepeat={'no-repeat'}
