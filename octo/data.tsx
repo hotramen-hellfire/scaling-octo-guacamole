@@ -34,7 +34,7 @@ export const dataProjects: project[] = [{
     ]
 },
 {
-    title: 'Optimizing with Assembly',
+    title: 'Optimizing with Assembly2',
     location: 'Course Project, IIT Bombay',
     time: "Autumn 2023",
     content: [

@@ -27,12 +27,12 @@ const School: React.FC<SchoolProps> = () => {
                 overflow={'hidden'}
             >
                 <Flex
-                    width={'100%'}
+                    width={'90%'}
                     justify={'center'}
                 >
                     <Text
                         fontFamily={'PWPers'}
-                        fontSize={50}
+                        fontSize={{ base: 30, md: 50 }}
                         textAlign={'center'}
                         // width={'100%'}
                         display={school ? 'unset' : 'none'}
@@ -41,7 +41,7 @@ const School: React.FC<SchoolProps> = () => {
                     </Text>
                     <Flex
                         fontFamily={'PWPers'}
-                        fontSize={50}
+                        fontSize={{ base: 30, md: 50 }}
                         display={!school ? 'flex' : 'none'}
                     >
                         <Typewriter
@@ -64,9 +64,12 @@ const School: React.FC<SchoolProps> = () => {
                 </Flex>
                 <List
                     fontFamily={'CabinSketch'}
+                    width={'90%'}
                 >
                     {dataScholastics.map(citem => (
-                        <ListItem>
+                        <ListItem
+                            key={citem}
+                        >
                             <Flex
                                 width={'100%'}
                                 justify={'left'}
