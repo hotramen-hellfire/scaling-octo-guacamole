@@ -15,13 +15,8 @@ const ProjectItem: React.FC<ProjectItemProps> = (props) => {
         <Flex
             width={'90%'}
             flexDirection={'column'}
-            // border={'1px solid black'}
             borderRadius={'10px'}
             m={2}
-            // boxShadow={'2xl'}
-            // _hover={{
-            //     boxShadow: 'dark-lg'
-            // }}
             p={2}
             justify={'center'}
             align={'center'}
@@ -73,14 +68,12 @@ const ProjectItem: React.FC<ProjectItemProps> = (props) => {
             </Flex>
             <Flex
                 width={'90%'}
-            // border={'1px solid red'}
             >
                 <UnorderedList>
                     {props.content.map(citem => (
                         <ListItem>
                             <Text
                                 fontFamily='CabinSketch'
-                                // textAlign={'center'}
                                 width={'100%'}
                                 fontSize={16}
                             >
