@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { RecoilEnv, RecoilRoot } from 'recoil';
 import { theme } from '../chakra/theme';
 import Layout from '../components/Layout/Layout';
+import { dataNavbarName } from '../../data';
 import '../styles/globals.css';
 import '../styles/scss/snow.scss'
 RecoilEnv.RECOIL_DUPLICATE_ATOM_KEY_CHECKING_ENABLED = false;
@@ -60,12 +61,11 @@ function App({ Component, pageProps }: AppProps) {
       <ChakraProvider theme={theme}>
         <Head >
           <title>
-            SAITAMA
+            {dataNavbarName}.gg
           </title>
           <link rel="icon" href="/leaf.png" />
         </Head>
         {loading && <Loader />}
-        {/* <Loader /> */}
         <Layout>
           <Component {...pageProps} />
         </Layout>

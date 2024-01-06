@@ -1,5 +1,5 @@
 import { project } from "./interfaces"
-export const dataDesktopBGLink: string = 'https://www.gifcen.com/wp-content/uploads/2022/04/wallpaper-gif-4.gif';
+export const dataDesktopBGLink: string = 'https://wallpaperaccess.com/full/2641047.gif';
 export const dataMobileBGLink: string = 'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXJpODg0NnMwcTdsa2NtbDh4OXp1NXZwOWFnNGQ1eHJnYmY5djN1bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ddfb7PvwyzrepUhsdZ/giphy.gif';
 export const dataNavbarName: string = 'HIMANSHU'
 export const dataName: string = 'HIMANSHU'

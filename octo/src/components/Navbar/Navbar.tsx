@@ -4,11 +4,13 @@ import { BsBodyText } from "react-icons/bs";
 import { FaCat } from "react-icons/fa";
 import { GiSpellBook } from "react-icons/gi";
 import { dataGithubLink, dataNavbarName } from '../../../data';
+import { useRouter } from 'next/router';
 type NavbarProps = {
 
 };
 
 const Navbar: React.FC<NavbarProps> = () => {
+    const router = useRouter();
     return (
         <>
             <Flex
@@ -30,7 +32,6 @@ const Navbar: React.FC<NavbarProps> = () => {
             >
                 <Flex
                     justify={'space-between'}
-                    // width={'100px'}
                     align={'center'}
                 >
                     <Text
@@ -81,8 +82,11 @@ const Navbar: React.FC<NavbarProps> = () => {
                                     fontFamily: 'PWPers',
                                     textDecoration: 'underline'
                                 }}
+                                onClick={() => {
+                                    router.push('/')
+                                }}
                             >
-                                ABOUT
+                                HOME
                             </Text>
                         </Flex>
                         <Icon fontSize={24} ml={1} mr={{ base: 1, md: 1 }} as={BsBodyText} />
@@ -119,6 +123,9 @@ const Navbar: React.FC<NavbarProps> = () => {
                                 }}
                                 fontWeight={'Bold'}
                                 align="center"
+                                onClick={() => {
+                                    router.push('/scrapbook')
+                                }}
                             >
                                 SCRAPBOOK
                             </Text>

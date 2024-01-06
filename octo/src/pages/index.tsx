@@ -73,10 +73,6 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>himanshu.gg</title>
-        <link rel="icon" href="/logo192.png" />
-      </Head>
       <Stack
         justify={'center'}
         align={'center'}
