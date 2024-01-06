@@ -5,6 +5,8 @@ import { FaCat } from "react-icons/fa";
 import { GiSpellBook } from "react-icons/gi";
 import { SiHomebrew } from "react-icons/si";
 import { dataGithubLink, dataNavbarName } from '../../../data';
+import { TiInfoLarge } from "react-icons/ti";
+import { RiContactsFill, RiContactsLine } from "react-icons/ri";
 type NavbarProps = {
 
 };
@@ -193,6 +195,48 @@ const Navbar: React.FC<NavbarProps> = () => {
                             <Icon fontSize={26} ml={1} mr={{ base: 1, md: 1 }} as={FaCat} />
                         </Flex>
                     </Link>
+                </Flex>
+                <Flex
+                    align="center"
+                    justify="center"
+                    pl={2}
+                    pr={2}
+                    pt={2}
+                    pb={2}
+                    borderRadius={5}
+                    // onClick={() => {
+                    //     router.push('/scrapbook')
+                    // }}
+                    cursor={'pointer'}
+                >
+                    <Flex
+                        height={'100%'}
+                        width={'100%'}
+                        align="center"
+                        justify={'center'}
+                    >
+                        <Flex
+                            height={'100%'}
+                            width={'100%'}
+                            align="center"
+                            justify={'center'}
+                        >
+                            <Text
+                                fontFamily={asPath === '/info' ? 'PWPers' : 'CabinSketch'}
+                                display={{ base: 'none', md: 'flex' }}
+                                fontSize={30}
+                                _hover={{
+                                    fontFamily: 'PWPers',
+                                    textDecoration: 'underline'
+                                }}
+                                fontWeight={'Bold'}
+                                align="center"
+                            >
+                                CONTACT
+                            </Text>
+                        </Flex>
+                        <Icon fontSize={22} ml={1} mr={{ base: 1, md: 1 }} display={asPath === '/scrapbook' ? 'none' : 'flex'} as={RiContactsLine} />
+                    </Flex>
                 </Flex>
             </Flex>
         </>

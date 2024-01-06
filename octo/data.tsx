@@ -105,24 +105,22 @@ export const dataFavouriteMusic: music[] = [
 
 export const dataScraps: scrap[] = [
     {
-        title: 'this is a test1',
-        text: 'testscapdkod testscapdkod testscapdkod testscapdkod testscapdkod testscapdkod testscapdkod testscapdkod ',
+        title: 'Etiam accumsan maximus gravida',
+        text: [
+            'Integer non hendrerit ante. Etiam accumsan maximus gravida. Phasellus diam turpis, cursus ac risus nec, faucibus scelerisque ex. Quisque at nulla a enim eleifend vestibulum. Nunc tempor eget metus sit amet dapibus. Ut a felis ultricies, semper metus at, auctor magna. Curabitur imperdiet at ante fringilla blandit. Duis quis neque at orci gravida varius.'
+            , 'Pellentesque hendrerit sit amet leo ut condimentum. Proin a orci non eros lacinia facilisis. Curabitur quis imperdiet nibh. Fusce viverra pharetra tortor, id euismod risus blandit ut. Nulla facilisi. Aliquam vitae purus vel diam malesuada vestibulum. Vivamus porta lectus a fringilla placerat. Donec elementum pretium augue, a sodales massa tincidunt ut. Integer in cursus augue, vitae pulvinar leo. Integer semper, mi vel gravida egestas, justo ante imperdiet dui, ac finibus tellus purus vitae tortor. Suspendisse fermentum lobortis felis, quis placerat nunc ornare in. Ut sed porttitor arcu, eu efficitur sapien.'
+            , 'Integer non hendrerit ante. Etiam accumsan maximus gravida. Phasellus diam turpis, cursus ac risus nec, faucibus scelerisque ex. Quisque at nulla a enim eleifend vestibulum. Nunc tempor eget metus sit amet dapibus. Ut a felis ultricies, semper metus at, auctor magna. Curabitur imperdiet at ante fringilla blandit. Duis quis neque at orci gravida varius.'
+        ],
         dateAdded: '6 Jan, 24',
-        yturl: 'https://youtu.be/sMvNNJIrIS4?si=fvEca-l7c2lNkitd',
-        image: 'https://th.bing.com/th/id/R.701cbe4b4944f0020a7fb5b8080dac12?rik=IkiE49aMnzPQHQ&riu=http%3a%2f%2fimages.wired.it%2fwp-content%2fuploads%2f2015%2f04%2f1429534575_pcmichael_full.jpg&ehk=GFxEJ1Xy1YWMI0%2bRHI2TUxI%2bVwM%2bpGj8%2bCArtKnZXN0%3d&risl=&pid=ImgRaw&r=0'
     },
     {
-        title: 'this is a test2',
-        text: 'testscapdkod testscapdkod testscapdkod testscapdkod testscapdkod testscapdkod testscapdkod testscapdkod ',
+        title: 'amet leo ut condimentum',
+        text: ['Pellentesque hendrerit sit amet leo ut condimentum. Proin a orci non eros lacinia facilisis. Curabitur quis imperdiet nibh. Fusce viverra pharetra tortor, id euismod risus blandit ut. Nulla facilisi. Aliquam vitae purus vel diam malesuada vestibulum. Vivamus porta lectus a fringilla placerat. Donec elementum pretium augue, a sodales massa tincidunt ut. Integer in cursus augue, vitae pulvinar leo. Integer semper, mi vel gravida egestas, justo ante imperdiet dui, ac finibus tellus purus vitae tortor. Suspendisse fermentum lobortis felis, quis placerat nunc ornare in. Ut sed porttitor arcu, eu efficitur sapien.'],
         dateAdded: '6 Jan, 24',
-        yturl: 'https://youtu.be/sMvNNJIrIS4?si=fvEca-l7c2lNkitd',
-        image: 'https://th.bing.com/th/id/R.701cbe4b4944f0020a7fb5b8080dac12?rik=IkiE49aMnzPQHQ&riu=http%3a%2f%2fimages.wired.it%2fwp-content%2fuploads%2f2015%2f04%2f1429534575_pcmichael_full.jpg&ehk=GFxEJ1Xy1YWMI0%2bRHI2TUxI%2bVwM%2bpGj8%2bCArtKnZXN0%3d&risl=&pid=ImgRaw&r=0'
     },
     {
-        title: 'this is a test3',
-        text: 'testscapdkod testscapdkod testscapdkod testscapdkod testscapdkod testscapdkod testscapdkod testscapdkod ',
+        title: 'laoreet felis eu lobortis',
+        text: ['Pellentesque dapibus laoreet felis eu lobortis. Praesent dignissim purus vitae commodo sollicitudin. Nullam convallis, lacus quis sagittis maximus, elit diam elementum neque, sit amet semper mi elit et dui. Sed mattis leo ut turpis porttitor efficitur. Ut mi lectus, mollis sed semper at, fringilla vel orci. Maecenas cursus scelerisque quam, ut sodales enim porta nec. Donec vitae tellus porta, dignissim lacus molestie, laoreet dolor. Donec efficitur accumsan lorem, vel ultrices diam malesuada faucibus. Donec a dignissim massa. Donec eget libero semper, congue mi eget, molestie lacus. Curabitur scelerisque finibus arcu a volutpat. Aliquam lobortis at nisi sit amet placerat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec vitae laoreet sapien. Proin vestibulum diam ut tincidunt eleifend. In efficitur nisl sit amet viverra maximus.'],
         dateAdded: '6 Jan, 24',
-        yturl: 'https://youtu.be/sMvNNJIrIS4?si=fvEca-l7c2lNkitd',
-        image: 'https://th.bing.com/th/id/R.701cbe4b4944f0020a7fb5b8080dac12?rik=IkiE49aMnzPQHQ&riu=http%3a%2f%2fimages.wired.it%2fwp-content%2fuploads%2f2015%2f04%2f1429534575_pcmichael_full.jpg&ehk=GFxEJ1Xy1YWMI0%2bRHI2TUxI%2bVwM%2bpGj8%2bCArtKnZXN0%3d&risl=&pid=ImgRaw&r=0'
     },
 ]

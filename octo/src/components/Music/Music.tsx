@@ -65,7 +65,7 @@ const Music: React.FC<MusicProps> = () => {
                         justify={'center'}
                         align={'center'}
                     >
-                        {dataFavouriteMusic.map((item, index) => (<MusicItem music={item} index={index} />))}
+                        {dataFavouriteMusic.map((item, index) => (<MusicItem key={index} music={item} index={index} />))}
                     </Stack>
                 </Accordion>
             </Flex >

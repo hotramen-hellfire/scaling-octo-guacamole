@@ -1,12 +1,13 @@
-import { Flex, Text } from '@chakra-ui/react';
+import { Flex, Spinner, Text } from '@chakra-ui/react';
 import React from 'react';
 
 type QuoteProps = {
     text: string,
-    author: string
+    author: string,
+    loading: boolean
 };
 
-const Quote: React.FC<QuoteProps> = ({ text, author }) => {
+const Quote: React.FC<QuoteProps> = ({ text, author, loading }) => {
 
     return (
         <>
@@ -24,10 +25,16 @@ const Quote: React.FC<QuoteProps> = ({ text, author }) => {
                 backdropBlur={'10px'}
                 backdropFilter={'blur(20px) contrast(90%)'}
                 border={'2px dotted white'}
+                align={'center'}
             >
+                <Spinner
+                    size={'xl'}
+                    display={loading ? 'flex' : 'none'}
+                />
                 <Text
                     fontFamily={'Unseen'}
                     width={'100%'}
+                    display={!loading ? 'unset' : 'none'}
                 >
                     /randomQuote/ {text}
                 </Text>
@@ -36,6 +43,7 @@ const Quote: React.FC<QuoteProps> = ({ text, author }) => {
                     textAlign={'right'}
                     width={'100%'}
                     flexGrow={1}
+                    display={!loading ? 'unset' : 'none'}
                 >
                     ~{author}
                 </Text>

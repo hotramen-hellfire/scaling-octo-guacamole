@@ -15,7 +15,7 @@ export interface music {
 export interface scrap {
     title: string,
     dateAdded: string,
-    text: string,
+    text: string[],
     image?: string,
     yturl?: string,
 }

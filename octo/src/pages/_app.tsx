@@ -61,11 +61,10 @@ function App({ Component, pageProps }: AppProps) {
       <ChakraProvider theme={theme}>
         <Head >
           <title>
-            {dataNavbarName}.gg
+            {dataNavbarName}
           </title>
           <link rel="icon" href="/leaf.png" />
         </Head>
-        {/* {loading && <Loader />} */}
         <Layout>
           <Component {...pageProps} />
         </Layout>
