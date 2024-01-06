@@ -1,4 +1,4 @@
-import { project } from "./interfaces"
+import { music, project } from "./interfaces"
 export const dataDesktopBGLink: string = 'https://wallpaperaccess.com/full/2641047.gif';
 export const dataMobileBGLink: string = 'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXJpODg0NnMwcTdsa2NtbDh4OXp1NXZwOWFnNGQ1eHJnYmY5djN1bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ddfb7PvwyzrepUhsdZ/giphy.gif';
 export const dataNavbarName: string = 'HIMANSHU'
@@ -48,4 +48,62 @@ export const dataScholastics: string[] = [
     'Went to St. Anselms Sr. Secondary School, Mansarovar, Jaipur.',
     'Went to Blue Heaven Vidyalaya, SFS, Mansarovar, Jaipur.',
     'Currently pursuing Bachelors of Techonology in Computer Science and Engineering from Indian Institute of Technology, Bombay, graduating 2026.'
+]
+
+export const dataFavouriteMusic: music[] = [
+    {
+        title: 'Keep It',
+        artist: 'Kid Culture',
+        yturl: 'https://youtu.be/nE1R28U4Mmc?si=t0z86-F-Er1TXb0-',
+    },
+    {
+        title: 'Aaj Na',
+        artist: 'Ritviz',
+        yturl: 'https://youtu.be/gIYXOBpjxwo?si=6DLr8phSWxgxYm-r'
+    },
+    {
+        title: 'Middle Child',
+        artist: 'J. Cole',
+        yturl: 'https://youtu.be/WILNIXZr2oc?si=MT9JCdCrctV73Q-8',
+    },
+    {
+        title: 'Benzi Box',
+        artist: 'MF Doom',
+        yturl: 'https://youtu.be/e4z-gGlpzwE?si=x-xF1azHxVs7GlB'
+    },
+    {
+        title: "At Doom's Gate",
+        artist: 'Mick Gordon',
+        yturl: 'https://youtu.be/HsLOxbLZMy8?si=gfGVSBKszM3VWhh_'
+    },
+    {
+        title: 'Alright',
+        artist: 'MF Doom',
+        yturl: 'https://youtu.be/q3QZepa976Q?si=81TVrd0e2ROp8Vjh'
+    },
+    {
+        title: 'Under Pressure',
+        artist: 'Logic',
+        yturl: 'https://youtu.be/N70w91TK9AQ?si=lgo1nDg6lhzYtxXb'
+    },
+    {
+        title: 'Khamoshi',
+        artist: 'Ritviz',
+        yturl: 'https://youtu.be/VODC59XYGvo?si=JFkCClUik1HD8XtX'
+    },
+    {
+        title: 'Homicide',
+        artist: 'Logic',
+        yturl: 'https://youtu.be/mfqsEpjEtrw?si=DtCxtL6hEhg5YuM7'
+    },
+    {
+        title: 'Ransom',
+        artist: 'Lil Tecca',
+        yturl: 'https://youtu.be/Sz-zo83cogY?si=YhTI5YpnZvDWWhj9'
+    },
+    {
+        title: 'Rebel Without A Pause',
+        artist: 'Public Enemy',
+        yturl: 'https://youtu.be/-fN5RX15Zhw?si=baz6765XMWnyj2bj'
+    },
 ]

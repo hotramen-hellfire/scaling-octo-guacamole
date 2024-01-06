@@ -4,3 +4,10 @@ export interface project {
     time: string,
     content: string[]
 }
+
+export interface music {
+    title: string,
+    artist: string,
+    comment?: string,
+    yturl: string
+}

@@ -1,3 +1,5 @@
+import Music from '@/components/Music/Music';
+import { Stack } from '@chakra-ui/react';
 import React from 'react';
 
 type scrapbookProps = {
@@ -5,7 +7,15 @@ type scrapbookProps = {
 };
 
 const scrapbook: React.FC<scrapbookProps> = () => {
-
-    return <div>Have a good coding</div>
+    return (<>
+        <Stack
+            justify={'center'}
+            align={'center'}
+            m={9}
+            flexDirection={'column'}
+        >
+            <Music />
+        </Stack>
+    </>)
 }
 export default scrapbook;

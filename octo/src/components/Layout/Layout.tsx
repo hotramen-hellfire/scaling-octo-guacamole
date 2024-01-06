@@ -18,10 +18,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 width={'100vw'}
                 minHeight={'100vh'}
                 flexDirection={'column'}
-                backgroundImage={{
-                    base: dataMobileBGLink,
-                    md: dataDesktopBGLink
-                }}
+                // backgroundImage={{
+                //     base: dataMobileBGLink,
+                //     md: dataDesktopBGLink
+                // }}
                 backgroundAttachment={'fixed'}
                 backgroundSize={'cover'}
                 backgroundRepeat={'no-repeat'}
@@ -29,6 +29,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 overflowY={'hidden'}
                 backgroundPosition={'center'}
                 color={fontColor}
+                background={'black'}
             >
                 <Navbar />
                 <main>
