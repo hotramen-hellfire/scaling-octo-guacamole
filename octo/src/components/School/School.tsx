@@ -1,7 +1,8 @@
-import { Flex, Text } from '@chakra-ui/react';
+import { Flex, List, ListIcon, ListItem, Text } from '@chakra-ui/react';
 import React, { useState } from 'react';
+import { IoIosSchool } from "react-icons/io";
 import Typewriter from 'typewriter-effect';
-import { dataAboutText } from '../../../data';
+import { dataAboutText, dataScholastics } from '../../../data';
 type SchoolProps = {
 
 };
@@ -14,7 +15,7 @@ const School: React.FC<SchoolProps> = () => {
                 width={'90%'}
                 zIndex={3}
                 borderRadius={10}
-                background={'white'}
+                backdropFilter={'blur(40px)'}
                 align={'center'}
                 flexDirection={'column'}
                 display={dataAboutText ? 'flex' : 'none'}
@@ -61,6 +62,21 @@ const School: React.FC<SchoolProps> = () => {
                         />
                     </Flex>
                 </Flex>
+                <List
+                    fontFamily={'CabinSketch'}
+                >
+                    {dataScholastics.map(citem => (
+                        <ListItem>
+                            <Flex
+                                width={'100%'}
+                                justify={'left'}
+                                align={'center'}
+                            >
+                                <ListIcon as={IoIosSchool} />
+                                {citem}
+                            </Flex>
+                        </ListItem>))}
+                </List>
             </Flex>
         </>
     )

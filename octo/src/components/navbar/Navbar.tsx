@@ -15,7 +15,7 @@ const Navbar: React.FC<NavbarProps> = () => {
             <Flex
                 zIndex={2}
                 backdropFilter={'blur(40px)'}
-                border="1px solid black"
+                // border="1px solid black"
                 height="50px"
                 overflow={"visible"}
                 justify={'space-evenly'}

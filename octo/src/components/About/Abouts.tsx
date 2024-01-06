@@ -56,7 +56,7 @@ const Abouts: React.FC<AboutsProps> = () => {
                     />
                 </Flex>
                 <Text
-                    width={'80 %'}
+                    width={'80%'}
                     textAlign={'center'}
                     fontFamily={'Unseen'}
                     mr={1}
