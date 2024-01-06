@@ -1,4 +1,5 @@
 import Music from '@/components/Music/Music';
+import ScrapbookWrapper from '@/components/Scrapbook/ScrapbookWrapper';
 import { Stack } from '@chakra-ui/react';
 import React from 'react';
 
@@ -15,6 +16,7 @@ const scrapbook: React.FC<scrapbookProps> = () => {
             flexDirection={'column'}
         >
             <Music />
+            <ScrapbookWrapper />
         </Stack>
     </>)
 }

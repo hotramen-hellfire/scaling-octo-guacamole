@@ -31,8 +31,9 @@ const Footer: React.FC<FooterProps> = () => {
                 The source code for this website is availible on
                 <Link
                     href='https://github.com/hotramen-hellfire/scaling-octo-guacamole'
-                > https://github.com/hotramen-hellfire/scaling-octo-guacamole </Link>
-                most of the data here can be modified using the data.tsx file in root the of project.
+                    target='_blank'
+                > https://github.com/hotramen-hellfire/scaling-octo-guacamole
+                </Link> most of the data here can be modified using the data.tsx file in root the of project.
             </Text>
         </Flex>
     </>)

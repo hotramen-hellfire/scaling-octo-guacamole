@@ -60,7 +60,7 @@ const MusicItem: React.FC<MusicItemProps> = ({ music, index }) => {
                             {music.comment ? music.comment : ''}
                         </Text>
                         {music.yturl && <Flex
-                            border='1px solid black'
+                            border='2px solid white'
                             m={2}
                             w={{ base: '80%', lg: '40%' }}
                             h={{ base: '155px', lg: '256px' }}
@@ -72,6 +72,7 @@ const MusicItem: React.FC<MusicItemProps> = ({ music, index }) => {
                                 position="relative"
                                 width='100%'
                                 height='100%'
+                                frameBorder={0}
                             />
                         </Flex>
                         }

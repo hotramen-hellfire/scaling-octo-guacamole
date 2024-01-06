@@ -1,19 +1,19 @@
-import { Accordion, Flex, Stack, Text } from '@chakra-ui/react';
+import { Flex, Text, Accordion, Stack } from '@chakra-ui/react';
 import React, { useState } from 'react';
-import Typewriter from 'typewriter-effect';
 import { dataAboutText, dataFavouriteMusic } from '../../../data';
-import MusicItem from './MusicItem';
+import MusicItem from '../Music/MusicItem';
+import Typewriter from 'typewriter-effect';
 
-type MusicProps = {
+type ScrapbookWrapperProps = {
 
 };
 
-const Music: React.FC<MusicProps> = () => {
-    const [musicDone, setMusicDone] = useState(false);
+const ScrapbookWrapper: React.FC<ScrapbookWrapperProps> = () => {
+    const [scrapDone, setScrapDone] = useState(false);
     return (
         <>
             <Flex
-                id='music'
+                id='scraps'
                 zIndex={3}
                 width={'90%'}
                 borderRadius={10}
@@ -32,34 +32,31 @@ const Music: React.FC<MusicProps> = () => {
                     fontSize={50}
                     textAlign={'center'}
                     width={'100%'}
-                    display={musicDone ? 'unset' : 'none'}
+                    display={scrapDone ? 'unset' : 'none'}
                 >
-                    FAVOURITE MUSIC
+                    SCRAPBOOK
                 </Text>
                 <Flex
                     fontFamily={'PWPers'}
                     fontSize={50}
-                    display={!musicDone ? 'flex' : 'none'}
+                    display={!scrapDone ? 'flex' : 'none'}
                 >
                     <Typewriter
                         options={{
                             delay: 100,
                         }}
                         onInit={(typewriter) => {
-                            typewriter.typeString('FAVOURITE')
-                                .pauseFor(200)
-                            typewriter.typeString(' ')
-                                .pauseFor(400)
-                            typewriter.typeString('MUSIC')
+                            typewriter.typeString('SCRAPBOOK')
+                                .pauseFor(1000)
                                 .callFunction(() => {
-                                    setMusicDone(true);
+                                    setScrapDone(true);
                                 })
                                 .start();
                         }}
                     />
                 </Flex>
 
-                <Accordion allowToggle width={'100%'}>
+                {/* <Accordion allowToggle width={'100%'}>
                     <Stack
                         width={'100%'}
                         justify={'center'}
@@ -67,9 +64,9 @@ const Music: React.FC<MusicProps> = () => {
                     >
                         {dataFavouriteMusic.map((item, index) => (<MusicItem music={item} index={index} />))}
                     </Stack>
-                </Accordion>
+                </Accordion> */}
             </Flex >
         </>
     )
 }
-export default Music;
+export default ScrapbookWrapper;
