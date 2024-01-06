@@ -11,3 +11,11 @@ export interface music {
     comment?: string,
     yturl: string
 }
+
+export interface scrap {
+    title: string,
+    dateAdded: string,
+    text: string,
+    image?: string,
+    yturl?: string,
+}

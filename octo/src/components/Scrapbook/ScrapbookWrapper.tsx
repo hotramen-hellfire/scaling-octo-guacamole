@@ -1,7 +1,8 @@
-import { Flex, Text } from '@chakra-ui/react';
+import { Flex, Stack, Text } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import Typewriter from 'typewriter-effect';
-import { dataAboutText } from '../../../data';
+import { dataScraps } from '../../../data';
+import ScrapItem from './ScrapItem';
 
 type ScrapbookWrapperProps = {
 
@@ -19,7 +20,7 @@ const ScrapbookWrapper: React.FC<ScrapbookWrapperProps> = () => {
                 backdropFilter={'blur(40px) contrast(90%)'}
                 align={'center'}
                 flexDirection={'column'}
-                display={dataAboutText ? 'flex' : 'none'}
+                display={dataScraps ? 'flex' : 'none'}
                 pb={2}
                 boxShadow={'2xl'}
                 _hover={{
@@ -55,15 +56,13 @@ const ScrapbookWrapper: React.FC<ScrapbookWrapperProps> = () => {
                     />
                 </Flex>
 
-                {/* <Accordion allowToggle width={'100%'}>
-                    <Stack
-                        width={'100%'}
-                        justify={'center'}
-                        align={'center'}
-                    >
-                        {dataFavouriteMusic.map((item, index) => (<MusicItem music={item} index={index} />))}
-                    </Stack>
-                </Accordion> */}
+                <Stack
+                    width={'100%'}
+                    justify={'center'}
+                    align={'center'}
+                >
+                    {dataScraps.map(item => <ScrapItem scrap={item} key={item.text.concat(item.title)}></ScrapItem>)}
+                </Stack>
             </Flex >
         </>
     )

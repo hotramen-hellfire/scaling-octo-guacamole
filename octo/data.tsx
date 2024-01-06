@@ -1,4 +1,4 @@
-import { music, project } from "./interfaces"
+import { music, project, scrap } from "./interfaces"
 export const dataDesktopBGLink: string = 'https://github.com/hotramen-hellfire/scaling-octo-guacamole/blob/main/imagebanks/yellomoonbg.jpg?raw=true';
 export const dataMobileBGLink: string = 'https://github.com/hotramen-hellfire/scaling-octo-guacamole/blob/main/imagebanks/yellomoonbg.jpg?raw=true';
 export const dataNavbarName: string = 'HIMANSHU'
@@ -100,5 +100,29 @@ export const dataFavouriteMusic: music[] = [
         title: 'Rebel Without A Pause',
         artist: 'Public Enemy',
         yturl: 'https://youtu.be/-fN5RX15Zhw?si=baz6765XMWnyj2bj'
+    },
+]
+
+export const dataScraps: scrap[] = [
+    {
+        title: 'this is a test1',
+        text: 'testscapdkod testscapdkod testscapdkod testscapdkod testscapdkod testscapdkod testscapdkod testscapdkod ',
+        dateAdded: '6 Jan, 24',
+        yturl: 'https://youtu.be/sMvNNJIrIS4?si=fvEca-l7c2lNkitd',
+        image: 'https://th.bing.com/th/id/R.701cbe4b4944f0020a7fb5b8080dac12?rik=IkiE49aMnzPQHQ&riu=http%3a%2f%2fimages.wired.it%2fwp-content%2fuploads%2f2015%2f04%2f1429534575_pcmichael_full.jpg&ehk=GFxEJ1Xy1YWMI0%2bRHI2TUxI%2bVwM%2bpGj8%2bCArtKnZXN0%3d&risl=&pid=ImgRaw&r=0'
+    },
+    {
+        title: 'this is a test2',
+        text: 'testscapdkod testscapdkod testscapdkod testscapdkod testscapdkod testscapdkod testscapdkod testscapdkod ',
+        dateAdded: '6 Jan, 24',
+        yturl: 'https://youtu.be/sMvNNJIrIS4?si=fvEca-l7c2lNkitd',
+        image: 'https://th.bing.com/th/id/R.701cbe4b4944f0020a7fb5b8080dac12?rik=IkiE49aMnzPQHQ&riu=http%3a%2f%2fimages.wired.it%2fwp-content%2fuploads%2f2015%2f04%2f1429534575_pcmichael_full.jpg&ehk=GFxEJ1Xy1YWMI0%2bRHI2TUxI%2bVwM%2bpGj8%2bCArtKnZXN0%3d&risl=&pid=ImgRaw&r=0'
+    },
+    {
+        title: 'this is a test3',
+        text: 'testscapdkod testscapdkod testscapdkod testscapdkod testscapdkod testscapdkod testscapdkod testscapdkod ',
+        dateAdded: '6 Jan, 24',
+        yturl: 'https://youtu.be/sMvNNJIrIS4?si=fvEca-l7c2lNkitd',
+        image: 'https://th.bing.com/th/id/R.701cbe4b4944f0020a7fb5b8080dac12?rik=IkiE49aMnzPQHQ&riu=http%3a%2f%2fimages.wired.it%2fwp-content%2fuploads%2f2015%2f04%2f1429534575_pcmichael_full.jpg&ehk=GFxEJ1Xy1YWMI0%2bRHI2TUxI%2bVwM%2bpGj8%2bCArtKnZXN0%3d&risl=&pid=ImgRaw&r=0'
     },
 ]
