@@ -15,10 +15,15 @@ const Quote: React.FC<QuoteProps> = ({ text, author }) => {
                 mb={2}
                 w={'70%'}
                 flexDirection={'column'}
-                fontSize={30}
-                // border={'1px solid black'}
-                p={2}
-                borderRadius={3}
+                fontSize={{ base: 20, md: 30 }}
+                pt={2}
+                pb={2}
+                pr={2}
+                pl={2}
+                borderRadius={10}
+                backdropBlur={'10px'}
+                backdropFilter={'blur(20px) contrast(90%)'}
+                border={'1px solid white'}
             >
                 <Text
                     fontFamily={'Unseen'}
