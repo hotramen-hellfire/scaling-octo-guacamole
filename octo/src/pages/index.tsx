@@ -1,11 +1,11 @@
 import Abouts from '@/components/About/Abouts'
+import Contacts from '@/components/Contacts/Contacts'
 import Projects from '@/components/Projects/Projects'
 import Quote from '@/components/Quote/Quote'
 import School from '@/components/School/School'
 import { Stack } from '@chakra-ui/react'
 import { useEffect, useState } from 'react'
 import { dataName } from '../../data'
-import Contacts from '@/components/Contacts/Contacts'
 export default function Home() {
   const [quoteLoading1, setQuoteLoading1] = useState(false);
   const [quoteLoading2, setQuoteLoading2] = useState(false);

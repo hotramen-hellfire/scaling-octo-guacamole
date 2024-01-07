@@ -1,12 +1,12 @@
 import { Flex } from '@chakra-ui/react';
 import React from 'react';
-import Navbar from '../Navbar/Navbar';
-import { fontColorState } from '../Atoms/fontColorAtom';
 import { useRecoilState } from 'recoil';
 import { dataDesktopBGLink, dataMobileBGLink } from '../../../data';
+import { fontColorState } from '../Atoms/fontColorAtom';
 import Footer from '../Footer/Footer';
-import Snow from './Snow';
+import Navbar from '../Navbar/Navbar';
 import ShootingStar from './ShootingStar';
+import Snow from './Snow';
 type LayoutProps = {
     children: any;
 };

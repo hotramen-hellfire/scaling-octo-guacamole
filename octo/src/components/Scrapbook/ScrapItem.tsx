@@ -1,7 +1,7 @@
+import { Flex, Image, Stack, Text } from '@chakra-ui/react';
 import React from 'react';
-import { scrap } from '../../../interfaces';
-import { Flex, Text, Image, Stack } from '@chakra-ui/react';
 import Iframe from 'react-iframe';
+import { scrap } from '../../../interfaces';
 
 type ScrapItemProps = {
     scrap: scrap

@@ -1,9 +1,9 @@
 import { Flex, Icon, Stack, Text } from '@chakra-ui/react';
 import React, { useState } from 'react';
+import { GiEvilBook } from 'react-icons/gi';
 import Typewriter from 'typewriter-effect';
 import { dataScraps } from '../../../data';
 import ScrapItem from './ScrapItem';
-import { GiEvilBook } from 'react-icons/gi';
 
 type ScrapbookWrapperProps = {
 

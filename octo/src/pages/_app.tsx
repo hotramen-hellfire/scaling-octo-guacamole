@@ -6,8 +6,8 @@ import { dataNavbarName } from '../../data';
 import { theme } from '../chakra/theme';
 import Layout from '../components/Layout/Layout';
 import '../styles/globals.css';
+import '../styles/scss/shootingstar.scss';
 import '../styles/snow.css';
-import '../styles/scss/shootingstar.scss'
 RecoilEnv.RECOIL_DUPLICATE_ATOM_KEY_CHECKING_ENABLED = false;
 function App({ Component, pageProps }: AppProps) {
   return (

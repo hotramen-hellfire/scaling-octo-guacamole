@@ -1,10 +1,9 @@
 import { Accordion, Flex, Icon, Stack, Text } from '@chakra-ui/react';
 import React, { useState } from 'react';
+import { GiPocketRadio } from 'react-icons/gi';
 import Typewriter from 'typewriter-effect';
 import { dataAboutText, dataFavouriteMusic } from '../../../data';
 import MusicItem from './MusicItem';
-import { RiRadioFill } from "react-icons/ri";
-import { GiPocketRadio } from 'react-icons/gi';
 type MusicProps = {
 
 };

@@ -1,10 +1,9 @@
 import { Flex, Icon, List, ListIcon, ListItem, Text } from '@chakra-ui/react';
 import React, { useState } from 'react';
+import { GiSchoolOfFish } from 'react-icons/gi';
 import { IoIosSchool } from "react-icons/io";
 import Typewriter from 'typewriter-effect';
 import { dataAboutText, dataScholastics } from '../../../data';
-import { FaProjectDiagram } from 'react-icons/fa';
-import { GiSchoolOfFish } from 'react-icons/gi';
 type SchoolProps = {
 
 };

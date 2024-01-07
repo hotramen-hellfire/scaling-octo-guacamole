@@ -1,9 +1,9 @@
-import { Flex, Icon, Image, Text } from '@chakra-ui/react';
+import { Flex, Icon, Text } from '@chakra-ui/react';
 import React, { useState } from 'react';
+import { FaProjectDiagram } from 'react-icons/fa';
 import Typewriter from 'typewriter-effect';
 import { dataAboutText, dataProjects } from '../../../data';
 import ProjectItem from './ProjectItem';
-import { FaProjectDiagram } from 'react-icons/fa';
 
 type ProjectsProps = {
 
