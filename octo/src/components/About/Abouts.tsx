@@ -1,6 +1,6 @@
-import { Flex, Text } from '@chakra-ui/react';
+import { Flex, Text, Image } from '@chakra-ui/react';
 import React, { useState } from 'react';
-import { dataAboutText, dataName, dataCityFrom } from '../../../data';
+import { dataAboutText, dataName, dataCityFrom, dataAboutImage } from '../../../data';
 import Typewriter from 'typewriter-effect';
 type AboutsProps = {
 
@@ -8,6 +8,7 @@ type AboutsProps = {
 
 const Abouts: React.FC<AboutsProps> = () => {
     const [abtDone, setAbtDone] = useState(false);
+    const [color, setColor] = useState(false);
     return (
         <>
             <Flex
@@ -24,6 +25,8 @@ const Abouts: React.FC<AboutsProps> = () => {
                 _hover={{
                     boxShadow: 'dark-lg'
                 }}
+                onMouseEnter={() => { setColor(true) }}
+                onMouseLeave={() => { setColor(false) }}
             >
                 <Text
                     fontFamily={'PWPers'}
@@ -65,6 +68,22 @@ const Abouts: React.FC<AboutsProps> = () => {
                 >
                     {dataAboutText}
                 </Text>
+                <Flex
+                    width={'100%'}
+                    align={'center'}
+                    justify={'center'}
+                    p={2}
+                    pt={10}
+                >
+                    <Image
+                        src={dataAboutImage}
+                        maxHeight={'300px'}
+                        border={'3px solid white'}
+                        filter={color ? 'none' : 'grayscale(100%)'}
+                        transition={'filter 1000ms linear'}
+                    />
+
+                </Flex>
                 <Text
                     mt={2}
                     width={'90%'}

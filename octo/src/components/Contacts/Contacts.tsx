@@ -78,7 +78,7 @@ const Contacts: React.FC<AboutsProps> = () => {
                                 ml={1}
                                 display={dataGithubLink}
                             >
-                                GitHub: {dataGithubLink}
+                                {dataGithubLink}
                             </Text>
                         </Link>
                     </Flex>
@@ -97,7 +97,7 @@ const Contacts: React.FC<AboutsProps> = () => {
                                 ml={1}
                                 display={dataEmail}
                             >
-                                Email: {dataEmail}
+                                {dataEmail}
                             </Text>
                         </Link>
                     </Flex>
