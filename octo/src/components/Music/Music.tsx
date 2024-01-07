@@ -1,9 +1,10 @@
-import { Accordion, Flex, Stack, Text } from '@chakra-ui/react';
+import { Accordion, Flex, Icon, Stack, Text } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import Typewriter from 'typewriter-effect';
 import { dataAboutText, dataFavouriteMusic } from '../../../data';
 import MusicItem from './MusicItem';
-
+import { RiRadioFill } from "react-icons/ri";
+import { GiPocketRadio } from 'react-icons/gi';
 type MusicProps = {
 
 };
@@ -27,15 +28,26 @@ const Music: React.FC<MusicProps> = () => {
                     boxShadow: 'dark-lg'
                 }}
             >
-                <Text
-                    fontFamily={'PWPers'}
-                    fontSize={50}
-                    textAlign={'center'}
+                <Flex
+                    align={'center'}
                     width={'100%'}
-                    display={musicDone ? 'unset' : 'none'}
+                    justify={'center'}
                 >
-                    FAVOURITE MUSIC
-                </Text>
+                    <Icon
+                        fontSize={40}
+                        as={GiPocketRadio}
+                        mr={2}
+                    />
+                    <Text
+                        fontFamily={'PWPers'}
+                        fontSize={50}
+                        textAlign={'center'}
+                        // width={'100%'}
+                        display={musicDone ? 'unset' : 'none'}
+                    >
+                        FAVOURITE MUSIC
+                    </Text>
+                </Flex>
                 <Flex
                     fontFamily={'PWPers'}
                     fontSize={50}

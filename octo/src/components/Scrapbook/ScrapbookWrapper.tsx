@@ -1,8 +1,9 @@
-import { Flex, Stack, Text } from '@chakra-ui/react';
+import { Flex, Icon, Stack, Text } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import Typewriter from 'typewriter-effect';
 import { dataScraps } from '../../../data';
 import ScrapItem from './ScrapItem';
+import { GiEvilBook } from 'react-icons/gi';
 
 type ScrapbookWrapperProps = {
 
@@ -27,15 +28,25 @@ const ScrapbookWrapper: React.FC<ScrapbookWrapperProps> = () => {
                     boxShadow: 'dark-lg'
                 }}
             >
-                <Text
-                    fontFamily={'PWPers'}
-                    fontSize={50}
-                    textAlign={'center'}
+                <Flex
+                    align={'center'}
+                    justify={'center'}
                     width={'100%'}
-                    display={scrapDone ? 'unset' : 'none'}
                 >
-                    SCRAPBOOK
-                </Text>
+                    <Text
+                        fontFamily={'PWPers'}
+                        fontSize={50}
+                        textAlign={'center'}
+                        // width={'100%'}
+                        display={scrapDone ? 'unset' : 'none'}
+                    >
+                        SCRAPBOOK
+                    </Text>
+                    <Icon
+                        fontSize={40}
+                        as={GiEvilBook}
+                    />
+                </Flex>
                 <Flex
                     fontFamily={'PWPers'}
                     fontSize={50}

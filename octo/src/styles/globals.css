@@ -32,7 +32,39 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+  --primary: #f1f1f1;
+  --secondary: rgba(31, 209, 253, 0.4);
+  --tertiary: rgba(31, 209, 253, 0.6);
 }
+
+/* scrollbar */
+/*Mozilla*/
+* {
+  scrollbar-width: thin;
+  scrollbar-color: yellow var(--primary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary);
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 14px;
+  border: 3px solid var(--primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--tertiary);
+}
+
+/* end scrollbar */
 
 @media (prefers-color-scheme: dark) {
   :root {

@@ -1,8 +1,9 @@
-import { Flex, Image, Text } from '@chakra-ui/react';
+import { Flex, Icon, Image, Text } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import Typewriter from 'typewriter-effect';
 import { dataAboutText, dataProjects } from '../../../data';
 import ProjectItem from './ProjectItem';
+import { FaProjectDiagram } from 'react-icons/fa';
 
 type ProjectsProps = {
 
@@ -28,8 +29,9 @@ const Projects: React.FC<ProjectsProps> = () => {
                 overflow={'hidden'}
             >
                 <Flex
-                    width={'90%'}
+                    align={'center'}
                     justify={'center'}
+                    width={'100%'}
                 >
                     <Text
                         fontFamily={'PWPers'}
@@ -39,6 +41,15 @@ const Projects: React.FC<ProjectsProps> = () => {
                     >
                         MERE PROJECTS
                     </Text>
+                    <Icon
+                        fontSize={40}
+                        as={FaProjectDiagram}
+                    />
+                </Flex>
+                <Flex
+                    width={'90%'}
+                    justify={'center'}
+                >
                     <Flex
                         fontFamily={'PWPers'}
                         fontSize={{ base: 40, md: 50 }}

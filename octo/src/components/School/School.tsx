@@ -1,8 +1,10 @@
-import { Flex, List, ListIcon, ListItem, Text } from '@chakra-ui/react';
+import { Flex, Icon, List, ListIcon, ListItem, Text } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import { IoIosSchool } from "react-icons/io";
 import Typewriter from 'typewriter-effect';
 import { dataAboutText, dataScholastics } from '../../../data';
+import { FaProjectDiagram } from 'react-icons/fa';
+import { GiSchoolOfFish } from 'react-icons/gi';
 type SchoolProps = {
 
 };
@@ -27,18 +29,28 @@ const School: React.FC<SchoolProps> = () => {
                 overflow={'hidden'}
             >
                 <Flex
-                    width={'90%'}
+                    align={'center'}
                     justify={'center'}
+                    width={'100%'}
                 >
+                    <Icon
+                        fontSize={40}
+                        as={GiSchoolOfFish}
+                        mr={2}
+                    />
                     <Text
                         fontFamily={'PWPers'}
                         fontSize={{ base: 30, md: 50 }}
                         textAlign={'center'}
-                        // width={'100%'}
                         display={school ? 'unset' : 'none'}
                     >
                         MY SCHOLASTICS
                     </Text>
+                </Flex>
+                <Flex
+                    width={'90%'}
+                    justify={'center'}
+                >
                     <Flex
                         fontFamily={'PWPers'}
                         fontSize={{ base: 30, md: 50 }}

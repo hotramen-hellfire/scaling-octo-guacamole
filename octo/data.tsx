@@ -1,4 +1,4 @@
-import { music, project, scrap } from "./interfaces"
+import { music, project, scrap } from "./interfaces";
 export const dataAboutImage: string = 'https://raw.githubusercontent.com/hotramen-hellfire/scaling-octo-guacamole/main/imagebanks/vibrant.jpeg';
 export const dataDesktopBGLink: string = 'https://github.com/hotramen-hellfire/scaling-octo-guacamole/blob/main/imagebanks/yellomoonbg.jpg?raw=true';
 export const dataMobileBGLink: string = 'https://github.com/hotramen-hellfire/scaling-octo-guacamole/blob/main/imagebanks/yellomoonbg.jpg?raw=true';
