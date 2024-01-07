@@ -66,7 +66,6 @@ const MusicItem: React.FC<MusicItemProps> = ({ music, index }) => {
                             h={{ base: '155px', lg: '256px' }}
                         >
                             <Iframe url={getEmbedUrl(music.yturl)}
-                                id=""
                                 className=""
                                 display="block"
                                 position="relative"

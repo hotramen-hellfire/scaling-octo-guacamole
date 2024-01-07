@@ -12,6 +12,7 @@ const Quote: React.FC<QuoteProps> = ({ text, author, loading }) => {
     return (
         <>
             <Flex
+                zIndex={1}
                 mt={2}
                 mb={2}
                 w={'70%'}

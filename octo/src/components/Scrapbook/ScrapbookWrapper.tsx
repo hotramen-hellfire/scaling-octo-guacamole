@@ -61,7 +61,7 @@ const ScrapbookWrapper: React.FC<ScrapbookWrapperProps> = () => {
                     justify={'center'}
                     align={'center'}
                 >
-                    {dataScraps.map(item => <ScrapItem scrap={item} key={item.text.concat(item.title)}></ScrapItem>)}
+                    {dataScraps.map((item, index) => <ScrapItem scrap={item} key={index}></ScrapItem>)}
                 </Stack>
             </Flex >
         </>

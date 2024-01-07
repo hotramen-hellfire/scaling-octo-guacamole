@@ -14,7 +14,7 @@ const Contacts: React.FC<AboutsProps> = () => {
     return (
         <>
             <Flex
-                id='abouts'
+                id='contacts'
                 zIndex={3}
                 width={'90%'}
                 borderRadius={10}
@@ -81,19 +81,20 @@ const Contacts: React.FC<AboutsProps> = () => {
                     width={'80%'}
                     justify={'center'}
                     align={'center'}
-                >
-                    <Icon
-                        as={MdOutlineEmail}
-                        fontSize={30}
-                    />
-                    <Text
-                        fontFamily={'Unseen'}
-                        mr={1}
-                        ml={1}
-                        display={dataEmail}
-                    >
-                        Email: {dataEmail}
-                    </Text>
+                >        <Link href="mailto:geeksforgeeks@gmail.com" display={'flex'}>
+                        <Icon
+                            as={MdOutlineEmail}
+                            fontSize={30}
+                        />
+                        <Text
+                            fontFamily={'Unseen'}
+                            mr={1}
+                            ml={1}
+                            display={dataEmail}
+                        >
+                            Email: {dataEmail}
+                        </Text>
+                    </Link>
                 </Flex>
                 <Flex
                     width={'80%'}
