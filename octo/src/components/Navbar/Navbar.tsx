@@ -1,18 +1,17 @@
 import { Flex, Icon, Image, Link, Text } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
-import React from 'react';
-import { FaCat } from "react-icons/fa";
+import React, { useState } from 'react';
 import { GiSpellBook } from "react-icons/gi";
+import { RiContactsLine } from "react-icons/ri";
 import { SiHomebrew } from "react-icons/si";
-import { dataGithubLink, dataNavbarName } from '../../../data';
-import { TiInfoLarge } from "react-icons/ti";
-import { RiContactsFill, RiContactsLine } from "react-icons/ri";
+import { dataNavbarName } from '../../../data';
 type NavbarProps = {
 
 };
 
 const Navbar: React.FC<NavbarProps> = () => {
     const router = useRouter();
+    const [inLogo, setInLogo] = useState(false);
     const { asPath } = useRouter();
     return (
         <>
@@ -36,14 +35,22 @@ const Navbar: React.FC<NavbarProps> = () => {
                 <Flex
                     justify={'space-between'}
                     align={'center'}
+                    onMouseEnter={() => { setInLogo(true); }}
+                    onMouseLeave={() => { setInLogo(false); }}
                 >
                     <Link
                         href='https://github.com/hotramen-hellfire/scaling-octo-guacamole'
                         target='_blank'
                     >
                         <Image
+                            display={!inLogo ? 'flex' : 'none'}
                             src='/leaf.png'
                             width={7}
+                        />
+                        <Image
+                            display={inLogo ? 'flex' : 'none'}
+                            src='/palm.png'
+                            width={10}
                         />
                     </Link>
                     <Text
@@ -158,9 +165,9 @@ const Navbar: React.FC<NavbarProps> = () => {
                     pt={2}
                     pb={2}
                     borderRadius={5}
-                    // onClick={() => {
-                    //     router.push('/scrapbook')
-                    // }}
+                    onClick={() => {
+                        router.push('/#contacts')
+                    }}
                     cursor={'pointer'}
                 >
                     <Flex

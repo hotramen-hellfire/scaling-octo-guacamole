@@ -1,4 +1,4 @@
-import { Flex, Icon, Link, Text } from '@chakra-ui/react';
+import { Flex, Icon, Link, Stack, Text } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import { FaGithubAlt } from 'react-icons/fa';
 import { ImInstagram } from "react-icons/im";
@@ -57,69 +57,76 @@ const Contacts: React.FC<AboutsProps> = () => {
                         }}
                     />
                 </Flex>
-                <Flex
-                    width={'80%'}
-                    justify={'center'}
+                <Stack
+                    display={'flex'}
+                    width={'100%'}
                     align={'center'}
                 >
-                    <Link href={dataGithubLink} target='_blank' display={'flex'}>
-                        <Icon
-                            as={FaGithubAlt}
-                            fontSize={30}
-                        />
-                        <Text
-                            fontFamily={'Unseen'}
-                            mr={1}
-                            ml={1}
-                            display={dataGithubLink}
-                        >
-                            GitHub: {dataGithubLink}
-                        </Text>
-                    </Link>
-                </Flex>
-                <Flex
-                    width={'80%'}
-                    justify={'center'}
-                    align={'center'}
-                >        <Link href="mailto:geeksforgeeks@gmail.com" display={'flex'}>
-                        <Icon
-                            as={MdOutlineEmail}
-                            fontSize={30}
-                        />
-                        <Text
-                            fontFamily={'Unseen'}
-                            mr={1}
-                            ml={1}
-                            display={dataEmail}
-                        >
-                            Email: {dataEmail}
-                        </Text>
-                    </Link>
-                </Flex>
-                <Flex
-                    width={'80%'}
-                    justify={'center'}
-                    align={'center'}
-                >
-                    <Link
-                        href={'https://www.instagram.com/' + dataInstagramUsername}
-                        display={'flex'}
-                        target='_blank'
+                    <Flex
+                        width={'80%'}
+                        justify={'center'}
+                        align={'center'}
                     >
-                        <Icon
-                            as={ImInstagram}
-                            fontSize={22}
-                        />
-                        <Text
-                            fontFamily={'Unseen'}
-                            mr={1}
-                            ml={1}
-                            display={dataEmail}
+                        <Link href={dataGithubLink} target='_blank' display={'flex'} alignItems={'center'}>
+                            <Icon
+                                as={FaGithubAlt}
+                                fontSize={30}
+                            />
+                            <Text
+                                fontFamily={'Unseen'}
+                                mr={1}
+                                ml={1}
+                                display={dataGithubLink}
+                            >
+                                GitHub: {dataGithubLink}
+                            </Text>
+                        </Link>
+                    </Flex>
+                    <Flex
+                        width={'80%'}
+                        justify={'center'}
+                        align={'center'}
+                    >        <Link href="mailto:geeksforgeeks@gmail.com" display={'flex'} alignItems={'center'}>
+                            <Icon
+                                as={MdOutlineEmail}
+                                fontSize={30}
+                            />
+                            <Text
+                                fontFamily={'Unseen'}
+                                mr={1}
+                                ml={1}
+                                display={dataEmail}
+                            >
+                                Email: {dataEmail}
+                            </Text>
+                        </Link>
+                    </Flex>
+                    <Flex
+                        width={'80%'}
+                        justify={'center'}
+                        align={'center'}
+                    >
+                        <Link
+                            href={'https://www.instagram.com/' + dataInstagramUsername}
+                            display={'flex'}
+                            target='_blank'
+                            alignItems={'center'}
                         >
-                            {dataInstagramUsername}
-                        </Text>
-                    </Link>
-                </Flex>
+                            <Icon
+                                as={ImInstagram}
+                                fontSize={22}
+                            />
+                            <Text
+                                fontFamily={'Unseen'}
+                                mr={1}
+                                ml={1}
+                                display={dataEmail}
+                            >
+                                {dataInstagramUsername}
+                            </Text>
+                        </Link>
+                    </Flex>
+                </Stack>
             </Flex >
         </>
     )
