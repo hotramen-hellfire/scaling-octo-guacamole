@@ -15,7 +15,7 @@ const Music: React.FC<MusicProps> = () => {
             <Flex
                 id='music'
                 zIndex={3}
-                width={'90%'}
+                width={'100%'}
                 borderRadius={10}
                 backdropFilter={'blur(40px) contrast(90%)'}
                 align={'center'}
@@ -39,17 +39,20 @@ const Music: React.FC<MusicProps> = () => {
                     />
                     <Text
                         fontFamily={'PWPers'}
-                        fontSize={50}
                         textAlign={'center'}
                         // width={'100%'}
                         display={musicDone ? 'unset' : 'none'}
+                        fontSize={{ base: 22, md: 50 }}
                     >
                         FAVOURITE MUSIC
                     </Text>
                 </Flex>
                 <Flex
                     fontFamily={'PWPers'}
-                    fontSize={50}
+                    fontSize={{ base: 22, md: 50 }}
+                    textAlign={'center'}
+                    width={'100%'}
+                    justify={'center'}
                     display={!musicDone ? 'flex' : 'none'}
                 >
                     <Typewriter

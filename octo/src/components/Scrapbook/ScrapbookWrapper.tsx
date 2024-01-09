@@ -16,7 +16,7 @@ const ScrapbookWrapper: React.FC<ScrapbookWrapperProps> = () => {
             <Flex
                 id='scraps'
                 zIndex={3}
-                width={'90%'}
+                width={'100%'}
                 borderRadius={10}
                 backdropFilter={'blur(40px) contrast(90%)'}
                 align={'center'}
@@ -35,10 +35,9 @@ const ScrapbookWrapper: React.FC<ScrapbookWrapperProps> = () => {
                 >
                     <Text
                         fontFamily={'PWPers'}
-                        fontSize={50}
-                        textAlign={'center'}
-                        // width={'100%'}
                         display={scrapDone ? 'unset' : 'none'}
+                        textAlign={'center'}
+                        fontSize={{ base: 22, md: 50 }}
                     >
                         SCRAPBOOK
                     </Text>
@@ -49,8 +48,9 @@ const ScrapbookWrapper: React.FC<ScrapbookWrapperProps> = () => {
                 </Flex>
                 <Flex
                     fontFamily={'PWPers'}
-                    fontSize={50}
                     display={!scrapDone ? 'flex' : 'none'}
+                    textAlign={'center'}
+                    fontSize={{ base: 22, md: 50 }}
                 >
                     <Typewriter
                         options={{

@@ -22,7 +22,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                     base: dataMobileBGLink,
                     md: dataDesktopBGLink
                 }}
-                backgroundAttachment={'fixed'}
+                backgroundAttachment={{ base: 'none', md: 'fixed' }}
                 backgroundSize={'cover'}
                 backgroundRepeat={'no-repeat'}
                 overflowX={'hidden'}

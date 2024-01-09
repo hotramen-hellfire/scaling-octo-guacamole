@@ -4,7 +4,7 @@ import { FaGithubAlt } from 'react-icons/fa';
 import { ImInstagram } from "react-icons/im";
 import { MdOutlineEmail } from 'react-icons/md';
 import Typewriter from 'typewriter-effect';
-import { dataAboutText, dataEmail, dataGithubLink, dataInstagramUsername } from '../../../data';
+import { dataEmail, dataGithubLink, dataInstagramUsername } from '../../../data';
 type AboutsProps = {
 
 };
@@ -16,12 +16,12 @@ const Contacts: React.FC<AboutsProps> = () => {
             <Flex
                 id='contacts'
                 zIndex={3}
-                width={'90%'}
+                width={'100%'}
                 borderRadius={10}
                 backdropFilter={'blur(40px) contrast(90%)'}
                 align={'center'}
                 flexDirection={'column'}
-                display={dataAboutText ? 'flex' : 'none'}
+                display={dataEmail || dataGithubLink || dataInstagramUsername ? 'flex' : 'none'}
                 pb={2}
                 boxShadow={'2xl'}
                 _hover={{
@@ -31,7 +31,7 @@ const Contacts: React.FC<AboutsProps> = () => {
             >
                 <Text
                     fontFamily={'PWPers'}
-                    fontSize={50}
+                    fontSize={{ base: 30, md: 50 }}
                     textAlign={'center'}
                     width={'100%'}
                     display={contactsDone ? 'unset' : 'none'}
@@ -40,7 +40,10 @@ const Contacts: React.FC<AboutsProps> = () => {
                 </Text>
                 <Flex
                     fontFamily={'PWPers'}
-                    fontSize={50}
+                    fontSize={{ base: 30, md: 50 }}
+                    textAlign={'center'}
+                    justify={'center'}
+                    width={'100%'}
                     display={!contactsDone ? 'flex' : 'none'}
                 >
                     <Typewriter
@@ -60,6 +63,7 @@ const Contacts: React.FC<AboutsProps> = () => {
                 <Stack
                     display={'flex'}
                     width={'100%'}
+                    fontSize={{ base: 10, md: 16 }}
                     align={'center'}
                 >
                     <Flex

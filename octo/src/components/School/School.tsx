@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { GiSchoolOfFish } from 'react-icons/gi';
 import { IoIosSchool } from "react-icons/io";
 import Typewriter from 'typewriter-effect';
-import { dataAboutText, dataScholastics } from '../../../data';
+import { dataScholastics } from '../../../data';
 type SchoolProps = {
 
 };
@@ -13,13 +13,13 @@ const School: React.FC<SchoolProps> = () => {
     return (
         <>
             <Flex
-                width={'90%'}
+                width={'100%'}
                 zIndex={3}
                 borderRadius={10}
                 backdropFilter={'blur(40px) contrast(90%)'}
                 align={'center'}
                 flexDirection={'column'}
-                display={dataAboutText ? 'flex' : 'none'}
+                display={dataScholastics ? 'flex' : 'none'}
                 pb={2}
                 boxShadow={'2xl'}
                 _hover={{
@@ -33,17 +33,17 @@ const School: React.FC<SchoolProps> = () => {
                     width={'100%'}
                 >
                     <Icon
-                        fontSize={40}
+                        fontSize={{ base: 20, md: 40 }}
                         as={GiSchoolOfFish}
                         mr={2}
                     />
                     <Text
                         fontFamily={'PWPers'}
-                        fontSize={{ base: 30, md: 50 }}
+                        fontSize={{ base: 22, md: 50 }}
                         textAlign={'center'}
                         display={school ? 'unset' : 'none'}
                     >
-                        MY SCHOLASTICS
+                        SCHOOL
                     </Text>
                 </Flex>
                 <Flex
@@ -52,19 +52,18 @@ const School: React.FC<SchoolProps> = () => {
                 >
                     <Flex
                         fontFamily={'PWPers'}
-                        fontSize={{ base: 30, md: 50 }}
+                        fontSize={{ base: 22, md: 50 }}
+                        textAlign={'center'}
                         display={!school ? 'flex' : 'none'}
+                        justify={'center'}
                     >
                         <Typewriter
                             options={{
                                 delay: 250,
                             }}
                             onInit={(typewriter) => {
-                                typewriter.typeString('MY')
+                                typewriter.typeString('SCHOOL')
                                     .pauseFor(500)
-                                typewriter.typeString(' ')
-                                    .pauseFor(1000)
-                                typewriter.typeString('SCHOLASTICS')
                                     .callFunction(() => {
                                         setSchool(true);
                                     })
@@ -84,7 +83,8 @@ const School: React.FC<SchoolProps> = () => {
                             <Flex
                                 width={'100%'}
                                 justify={'left'}
-                                align={'center'}
+                                align={'top'}
+                                fontSize={{ base: 10, md: 15 }}
                             >
                                 <ListIcon as={IoIosSchool} />
                                 {citem}

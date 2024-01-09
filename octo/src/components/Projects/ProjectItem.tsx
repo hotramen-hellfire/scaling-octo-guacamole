@@ -13,7 +13,7 @@ const ProjectItem: React.FC<ProjectItemProps> = (props) => {
 
     return (<>
         <Flex
-            width={'90%'}
+            width={'100%'}
             flexDirection={'column'}
             borderRadius={'10px'}
             m={2}
@@ -25,28 +25,32 @@ const ProjectItem: React.FC<ProjectItemProps> = (props) => {
                 fontFamily='CabinSketch'
                 textAlign={'center'}
                 width={'100%'}
-                fontSize={{ base: 30, md: 40 }}
+                fontSize={{ base: 15, md: 40 }}
             >
                 {props.title}
             </Text>
-            <Flex
-                direction={'row'}
-                justify={'center'}
-                align={'center'}
-            >
-                <Icon
-                    as={CiLocationOn}
-                    m={2}
-                />
-                <Text
-                    fontFamily='CabinSketch'
-                    textAlign={'center'}
-                    width={'100%'}
-                    fontSize={20}
+            {
+                props.location &&
+                <Flex
+                    direction={'row'}
+                    justify={'center'}
+                    align={'center'}
                 >
-                    {props.location}
-                </Text>
-            </Flex>
+                    <Icon
+                        as={CiLocationOn}
+                        fontSize={{ base: 12, md: 20 }}
+                        m={2}
+                    />
+                    <Text
+                        fontFamily='CabinSketch'
+                        textAlign={'center'}
+                        width={'100%'}
+                        fontSize={{ base: 10, md: 15 }}
+                    >
+                        {props.location}
+                    </Text>
+
+                </Flex>}
 
             <Flex
                 direction={'row'}
@@ -56,12 +60,13 @@ const ProjectItem: React.FC<ProjectItemProps> = (props) => {
                 <Icon
                     as={MdOutlineAccessTime}
                     m={2}
+                    fontSize={{ base: 12, md: 20 }}
                 />
                 <Text
                     fontFamily='CabinSketch'
                     textAlign={'center'}
                     width={'100%'}
-                    fontSize={14}
+                    fontSize={{ base: 10, md: 15 }}
                 >
                     {props.time}
                 </Text>
@@ -70,14 +75,14 @@ const ProjectItem: React.FC<ProjectItemProps> = (props) => {
                 width={'90%'}
             >
                 <UnorderedList>
-                    {props.content.map(citem => (
+                    {props.content.map((citem, index) => (
                         <ListItem
-                            key={citem}
+                            key={index}
                         >
                             <Text
                                 fontFamily='CabinSketch'
                                 width={'100%'}
-                                fontSize={{ base: 15, md: 18 }}
+                                fontSize={{ base: 10, md: 15 }}
                             >
                                 {citem}
                             </Text>

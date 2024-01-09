@@ -23,10 +23,11 @@ const Footer: React.FC<FooterProps> = () => {
                 boxShadow: 'dark-lg'
             }}
             flexDirection={'row'}
-            borderRadius={10}
+            border={'1px solid white'}
         >
             <Text
-                fontSize={10}
+                fontSize={{ base: 6, md: 10 }}
+                textAlign={'center'}
             >
                 The source code for this website is availible on
                 <Link

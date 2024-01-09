@@ -1,22 +1,21 @@
 import { music, project, scrap } from "./interfaces";
 export const dataAboutImage: string = 'https://raw.githubusercontent.com/hotramen-hellfire/scaling-octo-guacamole/main/imagebanks/vibrant.jpeg';
-export const dataDesktopBGLink: string = 'https://github.com/hotramen-hellfire/scaling-octo-guacamole/blob/main/imagebanks/yellomoonbg.jpg?raw=true';
-export const dataMobileBGLink: string = 'https://github.com/hotramen-hellfire/scaling-octo-guacamole/blob/main/imagebanks/yellomoonbg.jpg?raw=true';
-export const dataNavbarName: string = 'HIMANSHU'
+export const dataDesktopBGLink: string = 'https://wallup.net/wp-content/uploads/2016/01/90513-universe-galaxy-space.jpg';
+export const dataMobileBGLink: string = 'https://wallpapercave.com/wp/wp4324806.jpg';
+export const dataNavbarName: string = 'Himanshu'
 export const dataName: string = 'HIMANSHU'
 export const dataGithubLink: string = 'https://github.com/hotramen-hellfire'
 export const dataEmail: string = 'himanshu16gangwal@iitb.ac.in'
 export const dataInstagramUsername: string = 'himanxugar'
-export const dataAboutText: string = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing diam donec adipiscing tristique. At auctor urna nunc id cursus metus. Mattis enim ut tellus elementum. Senectus et netus et malesuada fames. Morbi tristique senectus et netus. Velit egestas dui id ornare arcu. Suspendisse sed nisi lacus sed viverra tellus in hac habitasse. Sed viverra ipsum nunc aliquet bibendum enim facilisis. Neque sodales ut etiam sit amet. Dignissim sodales ut eu sem integer vitae. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. Odio aenean sed adipiscing diam donec. Feugiat scelerisque varius morbi enim nunc faucibus. Euismod quis viverra nibh cras. Turpis egestas pretium aenean pharetra magna ac placerat.'
-export const dataCityFrom: string = 'Jaipur, Rajasthan'
+export const dataAboutText: string = 'Hi, I am Himanshu Gangwal, sophomore at the Department of Computer Science and Engineering at the Indian Institute of Technology, Bombay, I like creating cool stuff, much like this website you are visiting. I love music especially hiphop, but sometimes I love listening to pop too, Ritviz, Dua Lipa etc. My favourite programming language is TypeScript. I do not play a lot of video games, I used to but then I got bored, too bored, so bored that I started to read and go out watch a movie or just wander. Color the image pls;/. . .'
 export const dataProjects: project[] = [{
-    title: 'Directory Organizer',
-    location: 'Course Project, IIT Bombay',
-    time: "Spring 2023",
+    title: 'FullStack Imageboard',
+    time: "December, 2023",
     content: [
-        'Designed a BASH script to efficiently restructure directories based on criteria such as file extension and creation dates.',
-        'Implemented regex-based file filtering using sed based scripts, providing better control over file organization.',
-        'Enhanced the script by incorporating features such as automated log file generation, pattern-based exclusion, elaborate inspection of zip files, and a hash-based approach for managing duplicates, thereby extending overall functionality.'
+        'Developed an highly Imageboard website where users can create highly customizable boards/ posts / comments and vote on the content availible.',
+        'The project was developed with NextJs and Chakra UI based Frontend and Google Firestore for databasing needs.',
+        'Users can also tag boards by intrests to find other people with similar interests.',
+        'Have a look at https://saitama-cyan.vercel.app/',
     ]
 },
 {
@@ -27,24 +26,6 @@ export const dataProjects: project[] = [{
         ' Efficiently implemented algorithmic trading strategies, including profit maximization and statistical arbitrage.',
         'Simulated a market that executes orders, seeking to optimize prices for all customers and aiming to maximize trading.',
         'Implemented multi-threaded applications to efficiently exploit arbitrage opportunities across multiple markets.'
-    ]
-},
-{
-    title: 'Optimizing with Assembly',
-    location: 'Course Project, IIT Bombay',
-    time: "Autumn 2023",
-    content: [
-        'Reverse engineered binary executables by inspecting their x86 assemblies using objdump and gef.',
-        'Implemented merge sort and binary search in MIPS ISA to optimize query processing over unsorted data.'
-    ]
-},
-{
-    title: 'Optimizing with Assembly2',
-    location: 'Course Project, IIT Bombay',
-    time: "Autumn 2023",
-    content: [
-        'Reverse engineered binary executables by inspecting their x86 assemblies using objdump and gef.',
-        'Implemented merge sort and binary search in MIPS ISA to optimize query processing over unsorted data.'
     ]
 },]
 export const dataScholastics: string[] = [
@@ -108,22 +89,26 @@ export const dataFavouriteMusic: music[] = [
 
 export const dataScraps: scrap[] = [
     {
-        title: 'Etiam accumsan maximus gravida',
+        title: '(Lorem Ipsum) Etiam accumsan maximus gravida',
         text: [
             'Integer non hendrerit ante. Etiam accumsan maximus gravida. Phasellus diam turpis, cursus ac risus nec, faucibus scelerisque ex. Quisque at nulla a enim eleifend vestibulum. Nunc tempor eget metus sit amet dapibus. Ut a felis ultricies, semper metus at, auctor magna. Curabitur imperdiet at ante fringilla blandit. Duis quis neque at orci gravida varius.'
             , 'Pellentesque hendrerit sit amet leo ut condimentum. Proin a orci non eros lacinia facilisis. Curabitur quis imperdiet nibh. Fusce viverra pharetra tortor, id euismod risus blandit ut. Nulla facilisi. Aliquam vitae purus vel diam malesuada vestibulum. Vivamus porta lectus a fringilla placerat. Donec elementum pretium augue, a sodales massa tincidunt ut. Integer in cursus augue, vitae pulvinar leo. Integer semper, mi vel gravida egestas, justo ante imperdiet dui, ac finibus tellus purus vitae tortor. Suspendisse fermentum lobortis felis, quis placerat nunc ornare in. Ut sed porttitor arcu, eu efficitur sapien.'
             , 'Integer non hendrerit ante. Etiam accumsan maximus gravida. Phasellus diam turpis, cursus ac risus nec, faucibus scelerisque ex. Quisque at nulla a enim eleifend vestibulum. Nunc tempor eget metus sit amet dapibus. Ut a felis ultricies, semper metus at, auctor magna. Curabitur imperdiet at ante fringilla blandit. Duis quis neque at orci gravida varius.'
         ],
         dateAdded: '6 Jan, 24',
+        image: "https://github.com/hotramen-hellfire/scaling-octo-guacamole/blob/main/imagebanks/yellomoonbg.jpg?raw=true"
     },
     {
-        title: 'amet leo ut condimentum',
+        title: '(Lorem Ipsum) amet leo ut condimentum',
         text: ['Pellentesque hendrerit sit amet leo ut condimentum. Proin a orci non eros lacinia facilisis. Curabitur quis imperdiet nibh. Fusce viverra pharetra tortor, id euismod risus blandit ut. Nulla facilisi. Aliquam vitae purus vel diam malesuada vestibulum. Vivamus porta lectus a fringilla placerat. Donec elementum pretium augue, a sodales massa tincidunt ut. Integer in cursus augue, vitae pulvinar leo. Integer semper, mi vel gravida egestas, justo ante imperdiet dui, ac finibus tellus purus vitae tortor. Suspendisse fermentum lobortis felis, quis placerat nunc ornare in. Ut sed porttitor arcu, eu efficitur sapien.'],
         dateAdded: '6 Jan, 24',
+        yturl: 'https://youtu.be/nE1R28U4Mmc?si=t0z86-F-Er1TXb0-',
     },
     {
-        title: 'laoreet felis eu lobortis',
+        title: '(Lorem Ipsum) laoreet felis eu lobortis',
         text: ['Pellentesque dapibus laoreet felis eu lobortis. Praesent dignissim purus vitae commodo sollicitudin. Nullam convallis, lacus quis sagittis maximus, elit diam elementum neque, sit amet semper mi elit et dui. Sed mattis leo ut turpis porttitor efficitur. Ut mi lectus, mollis sed semper at, fringilla vel orci. Maecenas cursus scelerisque quam, ut sodales enim porta nec. Donec vitae tellus porta, dignissim lacus molestie, laoreet dolor. Donec efficitur accumsan lorem, vel ultrices diam malesuada faucibus. Donec a dignissim massa. Donec eget libero semper, congue mi eget, molestie lacus. Curabitur scelerisque finibus arcu a volutpat. Aliquam lobortis at nisi sit amet placerat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec vitae laoreet sapien. Proin vestibulum diam ut tincidunt eleifend. In efficitur nisl sit amet viverra maximus.'],
         dateAdded: '6 Jan, 24',
+        yturl: 'https://youtu.be/nE1R28U4Mmc?si=t0z86-F-Er1TXb0-',
+        image: "https://raw.githubusercontent.com/hotramen-hellfire/scaling-octo-guacamole/main/imagebanks/vibrant.jpeg"
     },
 ]

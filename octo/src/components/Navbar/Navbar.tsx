@@ -21,11 +21,12 @@ const Navbar: React.FC<NavbarProps> = () => {
                 height="50px"
                 overflow={"visible"}
                 justify={'space-between'}
-                pl={10}
-                pr={10}
+                pl={{ base: 0, md: 2 }}
+                pr={{ base: 0, md: 2 }}
                 align={'center'}
                 boxShadow={'2xl'}
                 overflowY={'hidden'}
+                overflowX={'hidden'}
                 _hover={{
                     boxShadow: 'dark-lg'
                 }}
@@ -69,7 +70,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                             router.push('/')
                         }}
                     >
-                        {dataNavbarName}
+                        {dataNavbarName.toUpperCase()}
                     </Text>
                 </Flex>
                 <Flex

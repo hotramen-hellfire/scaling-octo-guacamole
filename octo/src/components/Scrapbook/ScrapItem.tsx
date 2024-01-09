@@ -1,5 +1,5 @@
-import { Flex, Image, Stack, Text } from '@chakra-ui/react';
-import React from 'react';
+import { Flex, Image, Spinner, Stack, Text } from '@chakra-ui/react';
+import React, { useState } from 'react';
 import Iframe from 'react-iframe';
 import { scrap } from '../../../interfaces';
 
@@ -8,6 +8,7 @@ type ScrapItemProps = {
 };
 
 const ScrapItem: React.FC<ScrapItemProps> = (props) => {
+    const [videoLoad, setVideoLoad] = useState(false);
     function toTitleCase(str: string) {
         return str.replace(
             /\w\S*/g,
@@ -43,7 +44,7 @@ const ScrapItem: React.FC<ScrapItemProps> = (props) => {
                 <Text
                     fontFamily={'PencilTypewriter'}
                     width={'100%'}
-                    fontSize={20}
+                    fontSize={{ base: 15, md: 20 }}
                 >
                     [{props.scrap.dateAdded}] {toTitleCase(props.scrap.title)}
                 </Text>
@@ -54,24 +55,22 @@ const ScrapItem: React.FC<ScrapItemProps> = (props) => {
                 justify={'center'}
                 align={'center'}
             >
-                <Text
-                    fontFamily={'Unseen'}
+                <Stack
+                    spacing={'4px'}
                     width={'100%'}
+                    fontFamily={'Unseen'}
+                    fontSize={{ base: 10, md: 16 }}
                 >
-                    <Stack
-                        spacing={'6px'}
-                    >
-                        {props.scrap.text.map((item, index) => (
-                            <>
-                                <Text
-                                    key={index}
-                                >
-                                    {item}
-                                </Text>
-                            </>
-                        ))}
-                    </Stack>
-                </Text>
+                    {props.scrap.text.map((item, index) => (
+                        <>
+                            <Text
+                                key={index}
+                            >
+                                {item}
+                            </Text>
+                        </>
+                    ))}
+                </Stack>
             </Flex>
             {props.scrap.image &&
                 <Flex
@@ -80,10 +79,16 @@ const ScrapItem: React.FC<ScrapItemProps> = (props) => {
                     align={'center'}
                     p={6}
                 >
+                    {/* <Spinner
+                        size={'xl'}
+                        display={!photoLoad ? 'flex' : 'none'}
+                    /> */}
                     <Image
                         maxWidth={'80%'}
                         maxH={'250px'}
                         border={'2px solid white'}
+                        // onLoad={() => { setPhotoLoad(true) }}
+                        // // display={photoLoad ? 'flex' : 'none'}
                         src={props.scrap.image}
                     />
                 </Flex>
@@ -92,14 +97,22 @@ const ScrapItem: React.FC<ScrapItemProps> = (props) => {
                 border='2px solid white'
                 w={{ base: '80%', lg: '40%' }}
                 h={{ base: '155px', lg: '250px' }}
+                mt={6}
+                justify={'center'}
+                align={'center'}
             >
+                <Spinner
+                    size={'xl'}
+                    display={!videoLoad ? 'flex' : 'none'}
+                />
                 <Iframe url={getEmbedUrl(props.scrap.yturl)}
                     className=""
-                    display="block"
                     position="relative"
                     width='100%'
                     height='100%'
                     frameBorder={0}
+                    onLoad={() => { setVideoLoad(true) }}
+                    display={videoLoad ? 'block' : 'none'}
                 />
             </Flex>
             }

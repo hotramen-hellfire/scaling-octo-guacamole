@@ -15,9 +15,9 @@ const Quote: React.FC<QuoteProps> = ({ text, author, loading }) => {
                 zIndex={1}
                 mt={2}
                 mb={2}
-                w={'70%'}
+                w={'100%'}
                 flexDirection={'column'}
-                fontSize={{ base: 20, md: 30 }}
+                fontSize={{ base: 15, md: 30 }}
                 pt={2}
                 pb={2}
                 pr={2}

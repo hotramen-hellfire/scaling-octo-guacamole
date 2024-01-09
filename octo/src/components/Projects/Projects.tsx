@@ -2,7 +2,7 @@ import { Flex, Icon, Text } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import { FaProjectDiagram } from 'react-icons/fa';
 import Typewriter from 'typewriter-effect';
-import { dataAboutText, dataProjects } from '../../../data';
+import { dataProjects } from '../../../data';
 import ProjectItem from './ProjectItem';
 
 type ProjectsProps = {
@@ -14,13 +14,13 @@ const Projects: React.FC<ProjectsProps> = () => {
     return (
         <>
             <Flex
-                width={'90%'}
+                width={'100%'}
                 zIndex={3}
                 borderRadius={10}
                 backdropFilter={'blur(40px) contrast(90%)'}
                 align={'center'}
                 flexDirection={'column'}
-                display={dataAboutText ? 'flex' : 'none'}
+                display={dataProjects ? 'flex' : 'none'}
                 pb={2}
                 boxShadow={'2xl'}
                 _hover={{
@@ -35,14 +35,14 @@ const Projects: React.FC<ProjectsProps> = () => {
                 >
                     <Text
                         fontFamily={'PWPers'}
-                        fontSize={{ base: 40, md: 50 }}
                         textAlign={'center'}
                         display={projDone ? 'unset' : 'none'}
+                        fontSize={{ base: 30, md: 50 }}
                     >
-                        MERE PROJECTS
+                        PROJECTS
                     </Text>
                     <Icon
-                        fontSize={40}
+                        fontSize={{ base: 25, md: 40 }}
                         as={FaProjectDiagram}
                     />
                 </Flex>
@@ -52,19 +52,19 @@ const Projects: React.FC<ProjectsProps> = () => {
                 >
                     <Flex
                         fontFamily={'PWPers'}
-                        fontSize={{ base: 40, md: 50 }}
                         display={!projDone ? 'flex' : 'none'}
+                        fontSize={{ base: 30, md: 50 }}
+                        textAlign={'center'}
+                        width={'100%'}
+                        justify={'center'}
                     >
                         <Typewriter
                             options={{
                                 delay: 250,
                             }}
                             onInit={(typewriter) => {
-                                typewriter.typeString('MERE')
-                                    .pauseFor(500)
-                                typewriter.typeString(' ')
-                                    .pauseFor(1000)
                                 typewriter.typeString('PROJECTS')
+                                    .pauseFor(500)
                                     .callFunction(() => {
                                         setProjDone(true);
                                     })
@@ -80,7 +80,7 @@ const Projects: React.FC<ProjectsProps> = () => {
                     justify={'center'}
                     align={'center'}
                 >
-                    {dataProjects.map(item => <ProjectItem key={item.title} title={item.title} location={item.location} time={item.time} content={item.content} />)}
+                    {dataProjects.map((item, index) => <ProjectItem key={index} title={item.title} location={item.location ? item.location : ""} time={item.time} content={item.content} />)}
                 </Flex>
             </Flex>
         </>

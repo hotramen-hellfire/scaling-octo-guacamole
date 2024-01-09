@@ -1,7 +1,7 @@
 import { Flex, Image, Text } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import Typewriter from 'typewriter-effect';
-import { dataAboutImage, dataAboutText, dataCityFrom, dataName } from '../../../data';
+import { dataAboutImage, dataAboutText, dataName } from '../../../data';
 type AboutsProps = {
 
 };
@@ -14,7 +14,7 @@ const Abouts: React.FC<AboutsProps> = () => {
             <Flex
                 id='abouts'
                 zIndex={3}
-                width={'90%'}
+                width={'100%'}
                 borderRadius={10}
                 backdropFilter={'blur(40px) contrast(90%)'}
                 align={'center'}
@@ -30,7 +30,7 @@ const Abouts: React.FC<AboutsProps> = () => {
             >
                 <Text
                     fontFamily={'PWPers'}
-                    fontSize={50}
+                    fontSize={{ base: 30, md: 50 }}
                     textAlign={'center'}
                     width={'100%'}
                     display={abtDone ? 'unset' : 'none'}
@@ -39,8 +39,11 @@ const Abouts: React.FC<AboutsProps> = () => {
                 </Text>
                 <Flex
                     fontFamily={'PWPers'}
-                    fontSize={50}
                     display={!abtDone ? 'flex' : 'none'}
+                    fontSize={{ base: 30, md: 50 }}
+                    textAlign={'center'}
+                    width={'100%'}
+                    justify={'center'}
                 >
                     <Typewriter
                         options={{
@@ -63,6 +66,7 @@ const Abouts: React.FC<AboutsProps> = () => {
                     width={'80%'}
                     textAlign={'center'}
                     fontFamily={'Unseen'}
+                    fontSize={{ base: 12, md: 16 }}
                     mr={1}
                     ml={1}
                 >
@@ -77,7 +81,7 @@ const Abouts: React.FC<AboutsProps> = () => {
                 >
                     <Image
                         src={dataAboutImage}
-                        maxHeight={'300px'}
+                        maxHeight={{ base: '200px', md: '300px' }}
                         border={'3px solid white'}
                         filter={color ? 'none' : 'grayscale(100%)'}
                         transition={'filter 1000ms linear'}
@@ -89,8 +93,9 @@ const Abouts: React.FC<AboutsProps> = () => {
                     width={'90%'}
                     fontFamily={'PencilSRB'}
                     textAlign={'right'}
+                    fontSize={{ base: 12, md: 16 }}
                 >
-                    {dataName}<br />{dataCityFrom.toUpperCase()}
+                    {dataName.toUpperCase()}
                 </Text>
             </Flex >
         </>
