@@ -1,5 +1,6 @@
 > [My Website](https://www.cse.iitb.ac.in/~himanzu/)
 > [Repository](https://github.com/hotramen-hellfire/scaling-octo-guacamole/tree/main)
+> [Other Project: Imageboard](https://saitama-cyan.vercel.app/)
 # Hi
 This was an attempt to create a personal website with a scrapbook/ blog and other editable components. All of the data/ info is bound to the `data.tsx` file in the root of the next project, i.e. in `/octo/data.tsx`. 
 # How to use the template
